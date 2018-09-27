@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dea-spotitube:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="dea-spotitube.war">
+      <element id="artifact" artifact-name="dea-spotitube:war exploded" />
+    </root>
+  </artifact>
+</component>
