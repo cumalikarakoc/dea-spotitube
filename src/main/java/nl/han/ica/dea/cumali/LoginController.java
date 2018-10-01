@@ -18,15 +18,13 @@ public class LoginController {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response login(LoginRequestDTO request){
-        if(loginService.authenticate(request.getUser(), request.getPassword())){
+    public Response login(LoginRequestDTO request) {
+        if (loginService.authenticate(request.getUser(), request.getPassword())) {
             LoginResponseDTO response = new LoginResponseDTO();
             response.setToken("123-456-789");
             response.setUser(request.getUser());
             return Response.ok(response).build();
-        }else{
-            return Response.status(401).build();
         }
-
+        return Response.status(401).build();
     }
 }

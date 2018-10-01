@@ -15,14 +15,17 @@ public class TrackController {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getTracks(){
+    public Response getTracks() {
         return Response.ok(trackService.getAll()).build();
     }
 
     @GET
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getTrack(@PathParam("id") int id){
-        return Response.ok(trackService.find(id)).build();
+    public Response getTrack(@PathParam("id") int id) {
+        if (trackService.find(id) != null) {
+            return Response.ok(trackService.find(id)).build();
+        }
+        return Response.status(404).build();
     }
 }

@@ -11,16 +11,19 @@ public class PlaylistService {
     private PlaylistCollectionDTO playlistCollection;
 
     public PlaylistService(){
+        TrackService trackService = new TrackService();
+
+        List<TrackDTO> tracksDeathMetal = new ArrayList<>();
+        tracksDeathMetal.add(trackService.find(4));
+        tracksDeathMetal.add(trackService.find(5));
+
+        List<TrackDTO> tracksPop = new ArrayList<>();
+        tracksPop.add(trackService.find(1));
+        tracksPop.add(trackService.find(2));
+
         List<PlaylistDTO> playlists = new ArrayList<>();
-
-        List<TrackDTO> tracks1 = new ArrayList<>();
-        tracks1.add(new TrackDTO(1, "Song for someone", "The Frames", 350, "The cost", 0, null, null, false));
-        tracks1.add(new TrackDTO(2, "The cost", "The Frames", 423,null, 37, "10-01-2005", "Title song from the Album The Cost", true));
-
-        List<TrackDTO> tracks2 = new ArrayList<>();
-
-        playlists.add(new PlaylistDTO(1, "Death metal", true, tracks1));
-        playlists.add(new PlaylistDTO(2, "Pop", false, tracks2));
+        playlists.add(new PlaylistDTO(1, "Death metal", true, tracksDeathMetal));
+        playlists.add(new PlaylistDTO(2, "Pop", false, tracksPop));
 
         playlistCollection = new PlaylistCollectionDTO(playlists, 21321);
     }
@@ -33,6 +36,15 @@ public class PlaylistService {
         for (PlaylistDTO p: playlistCollection.getPlaylists()) {
             if (p.getId() == id){
                 return p;
+            }
+        }
+        return null;
+    }
+
+    public TrackDTO findTrack(PlaylistDTO playlist, int track_id) {
+        for (TrackDTO t : playlist.getTracks()) {
+            if (t.getId() == track_id){
+                return t;
             }
         }
         return null;
