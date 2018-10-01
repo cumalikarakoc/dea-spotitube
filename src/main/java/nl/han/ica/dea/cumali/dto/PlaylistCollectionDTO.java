@@ -1,6 +1,5 @@
 package nl.han.ica.dea.cumali.dto;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class PlaylistCollectionDTO {

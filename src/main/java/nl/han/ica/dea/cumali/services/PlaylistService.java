@@ -7,10 +7,10 @@ import nl.han.ica.dea.cumali.dto.TrackDTO;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlaylistRepository {
+public class PlaylistService {
     private PlaylistCollectionDTO playlistCollection;
 
-    public PlaylistRepository(){
+    public PlaylistService(){
         List<PlaylistDTO> playlists = new ArrayList<>();
 
         List<TrackDTO> tracks1 = new ArrayList<>();

@@ -1,7 +1,5 @@
 package nl.han.ica.dea.cumali.dto;
 
-import nl.han.ica.dea.cumali.dto.TrackDTO;
-
 import java.util.List;
 
 public class PlaylistDTO {

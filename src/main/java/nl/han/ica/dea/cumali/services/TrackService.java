@@ -6,10 +6,10 @@ import nl.han.ica.dea.cumali.dto.TrackDTO;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TrackRepository {
+public class TrackService {
     private TrackCollectionDTO trackCollection;
 
-    public TrackRepository(){
+    public TrackService(){
         List<TrackDTO> tracks = new ArrayList<>();
         tracks.add(new TrackDTO(3, "Ocean and a rock", "Lisa Hannigan", 337, "Sea sew", 0, null, null, false));
         tracks.add(new TrackDTO(4, "So Long, Marianne", "Leonard Cohen", 546, "Songs of Leonard Cohen", 0, null, null, false));
@@ -20,5 +20,14 @@ public class TrackRepository {
 
     public TrackCollectionDTO getAll(){
         return trackCollection;
+    }
+
+    public TrackDTO find(int id) {
+        for (TrackDTO t: trackCollection.getTracks()) {
+            if(t.getId() == id){
+                return t;
+            }
+        }
+        return null;
     }
 }

@@ -1,7 +1,5 @@
 package nl.han.ica.dea.cumali.dto;
 
-import java.util.Date;
-
 public class TrackDTO {
     private int id;
     private String title;
