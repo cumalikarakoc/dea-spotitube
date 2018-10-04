@@ -28,7 +28,7 @@ public class PlaylistService {
         playlistCollection = new PlaylistCollectionDTO(playlists, 21321);
     }
 
-    public PlaylistCollectionDTO getAll() {
+    public PlaylistCollectionDTO all() {
         return playlistCollection;
     }
 

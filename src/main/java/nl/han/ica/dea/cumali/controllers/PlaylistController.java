@@ -1,4 +1,4 @@
-package nl.han.ica.dea.cumali;
+package nl.han.ica.dea.cumali.controllers;
 
 import nl.han.ica.dea.cumali.dto.PlaylistDTO;
 import nl.han.ica.dea.cumali.dto.TrackCollectionDTO;
@@ -13,20 +13,18 @@ import javax.ws.rs.core.Response;
 @Path("/playlists")
 public class PlaylistController {
 
-    @Inject
     private PlaylistService playlistService;
-
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getPlaylists() {
-        return Response.ok(playlistService.getAll()).build();
+    public Response playlists() {
+        return Response.ok(playlistService.all()).build();
     }
 
     @GET
     @Path("{playlist}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getPlaylist(@PathParam("playlist") int id) {
+    public Response playlist(@PathParam("playlist") int id) {
         if (playlistService.find(id) != null) {
             return Response.ok(playlistService.find(id)).build();
         }
@@ -36,9 +34,9 @@ public class PlaylistController {
     @GET
     @Path("{playlist}/tracks")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getTracks(@PathParam("playlist") int id) {
+    public Response tracks(@PathParam("playlist") int id) {
         PlaylistDTO playlist = playlistService.find(id);
-        if (playlist.getTracks() != null) {
+        if (playlist != null) {
             return Response.ok(new TrackCollectionDTO(playlist.getTracks())).build();
         }
         return Response.status(404).build();
@@ -47,12 +45,17 @@ public class PlaylistController {
     @GET
     @Path("{playlist}/tracks/{track}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getTrack(@PathParam("playlist") int playlist_id, @PathParam("track") int track_id) {
+    public Response track(@PathParam("playlist") int playlist_id, @PathParam("track") int track_id) {
         PlaylistDTO playlist = playlistService.find(playlist_id);
         TrackDTO track = playlistService.findTrack(playlist, track_id);
         if(track != null) {
             return Response.ok(track).build();
         }
         return Response.status(404).build();
+    }
+
+    @Inject
+    public void setPlaylistService(PlaylistService playlistService) {
+        this.playlistService = playlistService;
     }
 }

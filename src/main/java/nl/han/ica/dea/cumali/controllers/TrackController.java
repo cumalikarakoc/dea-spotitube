@@ -1,4 +1,4 @@
-package nl.han.ica.dea.cumali;
+package nl.han.ica.dea.cumali.controllers;
 
 import nl.han.ica.dea.cumali.services.TrackService;
 
@@ -15,14 +15,14 @@ public class TrackController {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getTracks() {
-        return Response.ok(trackService.getAll()).build();
+    public Response tracks() {
+        return Response.ok(trackService.all()).build();
     }
 
     @GET
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getTrack(@PathParam("id") int id) {
+    public Response track(@PathParam("id") int id) {
         if (trackService.find(id) != null) {
             return Response.ok(trackService.find(id)).build();
         }

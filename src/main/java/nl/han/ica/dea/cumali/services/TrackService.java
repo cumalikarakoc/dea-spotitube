@@ -21,7 +21,7 @@ public class TrackService {
         trackCollection= new TrackCollectionDTO(tracks);
     }
 
-    public TrackCollectionDTO getAll(){
+    public TrackCollectionDTO all(){
         return trackCollection;
     }
 

@@ -6,11 +6,11 @@ import org.junit.jupiter.api.Test;
 
 
 class LoginServiceTest {
-    private LoginService loginService;
+    private UserService loginService;
 
     @BeforeEach
     void setup(){
-        loginService = new LoginService();
+        loginService = new UserService();
     }
 
     @Test
