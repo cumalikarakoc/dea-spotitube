@@ -1,0 +1,7 @@
+organization=cumalikarakoc-github
+projectKey=cumalikarakoc_dea-spotitube
+serverUrl=https://sonarcloud.io
+serverVersion=7.4.0.17856
+dashboardUrl=https://sonarcloud.io/dashboard?id=cumalikarakoc_dea-spotitube
+ceTaskId=AWY_rckcMw52PrQC0KuY
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWY_rckcMw52PrQC0KuY

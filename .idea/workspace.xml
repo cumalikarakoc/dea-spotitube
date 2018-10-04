@@ -6,27 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7112a272-8618-42c5-8328-297aa5788aef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+    <list default="true" id="7112a272-8618-42c5-8328-297aa5788aef" name="Default Changelist" comment="travis">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/PlaylistService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/PlaylistService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/TrackService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/TrackService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/dea-spotitube.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/LoginRequestDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/LoginResponseDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/PlaylistCollectionDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/PlaylistDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/TrackCollectionDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/TrackDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/services/PlaylistService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/services/TrackService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/lib/jaxrs-cors-0.0.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,15 +35,15 @@
     <session id="1204264355">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -66,6 +51,7 @@
           <entry key="class" value="1" />
           <entry key="java" value="113" />
           <entry key="md" value="1" />
+          <entry key="properties" value="3" />
           <entry key="snippet" value="1" />
           <entry key="xml" value="11" />
           <entry key="yml" value="1" />
@@ -76,6 +62,7 @@
           <entry key="CLASS" value="1" />
           <entry key="JAVA" value="113" />
           <entry key="Markdown" value="1" />
+          <entry key="Properties" value="3" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="11" />
           <entry key="YAML" value="1" />
@@ -85,17 +72,19 @@
         <counts>
           <entry key="dummy" value="138" />
           <entry key="java" value="8763" />
-          <entry key="txt" value="213" />
+          <entry key="properties" value="15" />
+          <entry key="txt" value="219" />
           <entry key="xml" value="23" />
-          <entry key="yml" value="22" />
+          <entry key="yml" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="8763" />
-          <entry key="PLAIN_TEXT" value="351" />
+          <entry key="PLAIN_TEXT" value="357" />
+          <entry key="Properties" value="15" />
           <entry key="XML" value="23" />
-          <entry key="YAML" value="22" />
+          <entry key="YAML" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -133,7 +122,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
+            <state relative-caret-position="833">
               <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -145,8 +134,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sonar-project.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -154,8 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="1054">
+              <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -202,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/CorsFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/CORSFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/Login/LoginRequest.java" />
@@ -252,6 +249,7 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/sonar-project.properties" />
         <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
@@ -317,8 +315,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -330,6 +326,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -557,7 +555,8 @@
       <workItem from="1538394543103" duration="15337000" />
       <workItem from="1538476767404" duration="668000" />
       <workItem from="1538640588437" duration="5773000" />
-      <workItem from="1538662536522" duration="1722000" />
+      <workItem from="1538662536522" duration="5729000" />
+      <workItem from="1538671241878" duration="836000" />
     </task>
     <task id="LOCAL-00001" summary="unit tests for services">
       <created>1538409795948</created>
@@ -580,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538656620244</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="travis">
+      <created>1538664275307</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538664275307</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -616,7 +622,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50859000" />
+    <option name="totallyTimeSpent" value="55702000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -629,9 +635,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23087248" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2342282" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -648,7 +653,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32907802" />
       <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4966443" visible="true" weight="0.41985816" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026846" side_tool="true" weight="0.32765958" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5033557" side_tool="true" weight="0.41985816" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4986577" weight="0.32907802" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -678,7 +683,8 @@
     <MESSAGE value="unit tests for services" />
     <MESSAGE value="404 response added to controllers" />
     <MESSAGE value="mockito dependency included&#10;unit tests cover login controller 100% - playlist controller 60%" />
-    <option name="LAST_COMMIT_MESSAGE" value="mockito dependency included&#10;unit tests cover login controller 100% - playlist controller 60%" />
+    <MESSAGE value="travis" />
+    <option name="LAST_COMMIT_MESSAGE" value="travis" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/CORSFilter.java" />
@@ -714,9 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,11 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,9 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,9 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,9 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,9 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -813,9 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -846,19 +829,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
+        <state relative-caret-position="833">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -866,10 +839,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sonar-project.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="1054">
+          <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -880,10 +860,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

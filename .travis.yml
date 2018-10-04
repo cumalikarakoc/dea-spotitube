@@ -1,1 +1,13 @@
 language: java
+install: true
+
+jdk:
+  - oraclejdk8
+
+addons:
+  sonarcloud:
+    organization: cumalikarakoc-github
+    token:
+      secure: "ndNL03gjhoZr8ZaCrao2H8OnAtZ+xdvjnRSyUxNHfeDADpX1/q2Z93vn5ciGudWwYmML9V+NnoM0mg5J1m0rE4IlRDdwlrLGDIBW3mpxD6c8KWdsQa0hv71dWnckGKu77wXHUmXEQF3HNYqoiuTsKiyc6UppZJm3oYEMWEFAB1vVyq82z4iQiVFClO7W1GpBkVbhgsPZMVb6AHgakg0+wSm6BRcMNNB0HL22vNA5b5Sm+ssKMrkHClkl2he2CrEWvfR/SxWU6qF1AdNiKZGxIS99p5X4u9A52mNYEUZls1cOIXRb7N+EvBOoM6VzjiMAkv+BIHiVCqXL5uT0mtpQT2sfvTa0Oj2yabHWDFH4yK1qYoOeyc7vs0litJCvyw25OyGCJtA91IreQ3c8oHzGUJ0akBPYfFWQjWXLlMcXsi1huAnAsvSSpTDTTQPxWD1mLbdk6UozorELpwcX3Kz6W0CuAqvsUU+/ZYP/7RvFU7yLUYSNFjT8bvPWU72B+VqPYWv8gBp5gqO/mZkyivNXX+lqrOnJ3+YvA8wTe6lC3YgTPAEJhRY6ex+DWpyV7+2W4rNBpAJIBcGxQ8qDZ1RvFShIxvAbvKGvNg22/e6/rlnVGP7b/GUOPA6zO4iIHdcc2CWjzO6qWO6r/Qruz5QEt5MjxAeR+sY51EPoXHmApG4="
+script:
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
