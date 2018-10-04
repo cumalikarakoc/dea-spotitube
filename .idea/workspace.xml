@@ -7,51 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7112a272-8618-42c5-8328-297aa5788aef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_4_0_b34.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_4_0_b34.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_4_0_b34.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_4_0_b34.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_4_0_b34.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_22_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_22_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_10_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/LoginControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dea-spotitube.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dea-spotitube.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/PlaylistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/TrackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/TrackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/PlaylistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/PlaylistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/TrackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/TrackService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/nl/han/ica/dea/cumali/services/LoginServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/LoginServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/nl/han/ica/dea/cumali/services/PlaylistServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/PlaylistServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/nl/han/ica/dea/cumali/services/TrackServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/TrackServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/PlaylistController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/TrackController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/dea-spotitube.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/PlaylistController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/TrackController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/services/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/PlaylistService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/PlaylistService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/TrackService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/TrackService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dea-spotitube.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/LoginRequestDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/LoginResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/PlaylistCollectionDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/PlaylistDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/TrackCollectionDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/TrackDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/services/PlaylistService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/services/TrackService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/lib/jaxrs-cors-0.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-nl.han.ica.dea.cumali.LoginServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-nl.han.ica.dea.cumali.PlaylistServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-nl.han.ica.dea.cumali.TrackServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/nl.han.ica.dea.cumali.LoginServiceTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/nl.han.ica.dea.cumali.PlaylistServiceTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/nl.han.ica.dea.cumali.TrackServiceTest.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,15 +50,15 @@
     <session id="1204264355">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -92,7 +67,8 @@
           <entry key="java" value="113" />
           <entry key="md" value="1" />
           <entry key="snippet" value="1" />
-          <entry key="xml" value="10" />
+          <entry key="xml" value="11" />
+          <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -101,22 +77,25 @@
           <entry key="JAVA" value="113" />
           <entry key="Markdown" value="1" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="10" />
+          <entry key="XML" value="11" />
+          <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="138" />
           <entry key="java" value="8763" />
-          <entry key="txt" value="81" />
-          <entry key="xml" value="18" />
+          <entry key="txt" value="213" />
+          <entry key="xml" value="23" />
+          <entry key="yml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="8763" />
-          <entry key="PLAIN_TEXT" value="219" />
-          <entry key="XML" value="18" />
+          <entry key="PLAIN_TEXT" value="351" />
+          <entry key="XML" value="23" />
+          <entry key="YAML" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -130,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/PlaylistService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
+            <state relative-caret-position="204">
               <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -142,25 +121,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            <state relative-caret-position="476">
+              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1882#1883#0" expanded="true" />
-                <element signature="e#1936#1937#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
             </state>
           </provider>
         </entry>
@@ -177,7 +172,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="204">
               <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -207,7 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/JAXRSConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/CorsFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/CORSFilter.java" />
@@ -253,11 +247,12 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/TrackController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/LoginControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/TrackService.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -322,7 +317,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -330,101 +326,17 @@
               <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
               <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538656552420" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538656644468" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -644,7 +556,8 @@
       <workItem from="1538391021737" duration="1245000" />
       <workItem from="1538394543103" duration="15337000" />
       <workItem from="1538476767404" duration="668000" />
-      <workItem from="1538640588437" duration="5068000" />
+      <workItem from="1538640588437" duration="5773000" />
+      <workItem from="1538662536522" duration="1722000" />
     </task>
     <task id="LOCAL-00001" summary="unit tests for services">
       <created>1538409795948</created>
@@ -660,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538423038442</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mockito dependency included&#10;unit tests cover login controller 100% - playlist controller 60%">
+      <created>1538656620244</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1538656620244</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -696,7 +616,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48432000" />
+    <option name="totallyTimeSpent" value="50859000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -711,7 +631,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22751679" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23087248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -733,7 +653,6 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32907802" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3295302" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -746,6 +665,7 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Coverage" order="12" side_tool="true" weight="0.3295302" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -757,7 +677,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="unit tests for services" />
     <MESSAGE value="404 response added to controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="404 response added to controllers" />
+    <MESSAGE value="mockito dependency included&#10;unit tests cover login controller 100% - playlist controller 60%" />
+    <option name="LAST_COMMIT_MESSAGE" value="mockito dependency included&#10;unit tests cover login controller 100% - playlist controller 60%" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/CORSFilter.java" />
@@ -871,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dto/LoginResponseDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -912,10 +826,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/PlaylistService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="49" />
+        <state relative-caret-position="204">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -924,13 +838,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        <state relative-caret-position="476">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1882#1883#0" expanded="true" />
-            <element signature="e#1936#1937#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
@@ -941,23 +880,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/PlaylistService.java">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
         </state>
       </provider>
     </entry>

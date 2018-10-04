@@ -1,8 +1,8 @@
+nl\han\ica\dea\cumali\services\UserService.class
 nl\han\ica\dea\cumali\dto\TrackDTO.class
 nl\han\ica\dea\cumali\dto\TrackCollectionDTO.class
 nl\han\ica\dea\cumali\dto\LoginRequestDTO.class
 nl\han\ica\dea\cumali\services\PlaylistService.class
-nl\han\ica\dea\cumali\services\LoginService.class
 nl\han\ica\dea\cumali\controllers\TrackController.class
 nl\han\ica\dea\cumali\controllers\HomeController.class
 nl\han\ica\dea\cumali\controllers\PlaylistController.class
