@@ -6,30 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7112a272-8618-42c5-8328-297aa5788aef" name="Default Changelist" comment="dao added for trackservice and userservice&#10;unit tests written">
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/TrackControllerTest.java" afterDir="false" />
+    <list default="true" id="7112a272-8618-42c5-8328-297aa5788aef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/StatementHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/TrackDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dto/TrackDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dto/TrackDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/PlaylistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/PlaylistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/TrackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/TrackService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/LoginServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/PlaylistServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/PlaylistServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/TrackServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/TrackServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/dto/TrackDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/dto/TrackDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/PlaylistService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/PlaylistService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/TrackService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/TrackService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/dea/cumali/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/TrackDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/dto/TrackDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/services/TrackService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/services/TrackService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/dea-spotitube/WEB-INF/classes/nl/han/ica/dea/cumali/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/han/ica/dea/cumali/services/LoginServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/han/ica/dea/cumali/services/PlaylistServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/han/ica/dea/cumali/services/PlaylistServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/han/ica/dea/cumali/services/TrackServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/han/ica/dea/cumali/services/TrackServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,7 +55,7 @@
     <session id="1204264355">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="3" />
@@ -92,7 +71,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="158" />
+          <entry key="java" value="159" />
           <entry key="md" value="1" />
           <entry key="properties" value="7" />
           <entry key="snippet" value="1" />
@@ -103,7 +82,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="158" />
+          <entry key="JAVA" value="159" />
           <entry key="Markdown" value="1" />
           <entry key="Properties" value="7" />
           <entry key="Scratch" value="1" />
@@ -139,15 +118,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/TrackControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -256,8 +226,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="638" />
-    <option name="y" value="-12" />
+    <option name="x" value="637" />
+    <option name="y" value="-13" />
     <option name="width" value="1085" />
     <option name="height" value="1040" />
   </component>
@@ -392,7 +362,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538946456867" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538946570101" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -613,7 +583,7 @@
       <workItem from="1538671241878" duration="2237000" />
       <workItem from="1538724130479" duration="10815000" />
       <workItem from="1538830363359" duration="9066000" />
-      <workItem from="1538940172696" duration="6374000" />
+      <workItem from="1538940172696" duration="6491000" />
     </task>
     <task id="LOCAL-00001" summary="unit tests for services">
       <created>1538409795948</created>
@@ -650,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538735609281</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="dao added for trackservice and userservice&#10;unit tests written">
+      <created>1538946557706</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1538946557706</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -686,7 +663,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83358000" />
+    <option name="totallyTimeSpent" value="83475000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -699,8 +676,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990476" visible="true" weight="0.30872482" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990476" visible="true" weight="0.30872482" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -716,9 +694,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4966443" weight="0.2567376" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4966443" visible="true" weight="0.2567376" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.504698" side_tool="true" weight="0.4212766" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.4986577" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4986577" weight="0.32907802" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32907802" />
@@ -983,16 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-226">
-          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/TrackService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -1040,10 +1008,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/HomeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="323">
+          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,6 +1022,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
