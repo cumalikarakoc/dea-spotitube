@@ -1,9 +1,10 @@
 package nl.han.ica.dea.cumali.services;
 
 
-public class UserService {
+import nl.han.ica.dea.cumali.datasources.UserDAO;
 
-    public boolean authenticate(String user, String password) {
-        return "cumali".equals(user) && "admin123".equals(password);
+public class UserService {
+    public boolean authenticate(String username, String password) {
+        return new UserDAO().authenticate(username, password);
     }
 }

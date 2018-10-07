@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
-class LoginServiceTest {
+class UserServiceTest {
     private UserService loginService;
 
     @BeforeEach

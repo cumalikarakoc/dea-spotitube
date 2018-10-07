@@ -54,7 +54,8 @@ import java.util.logging.Logger;
         }
 
         private void addNewItemFromResultSet(List<PlaylistDTO> playlists, ResultSet resultSet) throws SQLException {
-            PlaylistDTO item = new PlaylistDTO(resultSet.getInt("id"), resultSet.getString("name"), resultSet.getBoolean("owner"), null);
+
+            PlaylistDTO item = new PlaylistDTO(resultSet.getInt("id"), resultSet.getString("name"), resultSet.getBoolean("owner"), new TrackDAO().findTracks(resultSet.getInt("id")));
             playlists.add(item);
         }
 }

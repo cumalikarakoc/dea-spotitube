@@ -1,9 +1,14 @@
 package nl.han.ica.dea.cumali.services;
 
+import nl.han.ica.dea.cumali.dto.PlaylistCollectionDTO;
 import nl.han.ica.dea.cumali.dto.PlaylistDTO;
+import nl.han.ica.dea.cumali.dto.TrackDTO;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 class PlaylistServiceTest {
     private PlaylistService playlistService;
@@ -14,6 +19,14 @@ class PlaylistServiceTest {
     }
 
     @Test
+    void testShouldReturnEmptyArrayIfThereAreNoPlaylists(){
+        List<PlaylistDTO> playlists = new ArrayList<>();
+        playlistService.setPlaylistCollection(new PlaylistCollectionDTO(playlists, 21312));
+
+        Assertions.assertEquals(0, playlistService.all().getPlaylists().size());
+    }
+
+    @Test
     void testShouldReturnPlaylistIfExists(){
         PlaylistDTO playlist = playlistService.find(1);
         Assertions.assertNotNull(playlist);
@@ -21,7 +34,7 @@ class PlaylistServiceTest {
 
     @Test
     void testShouldReturnNullIfPlaylistNotExists(){
-        PlaylistDTO playlist = playlistService.find(5445646);
+        PlaylistDTO playlist = playlistService.find(-1);
         Assertions.assertNull(playlist);
     }
 
@@ -29,5 +42,19 @@ class PlaylistServiceTest {
     void testShouldReturnPlaylistWithTheGivenId(){
         PlaylistDTO playlist = playlistService.find(1);
         Assertions.assertEquals(playlist.getId(), 1);
+    }
+
+    @Test
+    void testShouldReturnTheTrackOfTheGivenPlaylist(){
+        PlaylistDTO playlist = playlistService.find(2);
+        TrackDTO track = playlistService.findTrack(playlist, 1);
+        Assertions.assertNotNull(track);
+    }
+
+    @Test
+    void testShouldReturnNullIfRequestedTrackOfTheGivenPlaylistNotExists(){
+        PlaylistDTO playlist = playlistService.find(2);
+        TrackDTO track = playlistService.findTrack(playlist, -1);
+        Assertions.assertNull(track);
     }
 }

@@ -2,11 +2,11 @@ package nl.han.ica.dea.cumali.controllers;
 
 import nl.han.ica.dea.cumali.dto.PlaylistCollectionDTO;
 import nl.han.ica.dea.cumali.dto.PlaylistDTO;
+import nl.han.ica.dea.cumali.dto.TrackDTO;
 import nl.han.ica.dea.cumali.services.PlaylistService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 
 import javax.ws.rs.core.Response;
@@ -17,6 +17,7 @@ public class PlaylistControllerTest {
     private PlaylistController playlistController;
     private PlaylistCollectionDTO playlistCollectionDTO;
     private PlaylistDTO playlistDTO;
+    private TrackDTO trackDTO;
 
     @BeforeEach
     void setup(){
@@ -25,6 +26,7 @@ public class PlaylistControllerTest {
         playlistController.setPlaylistService(playlistService);
         playlistCollectionDTO = Mockito.mock(PlaylistCollectionDTO.class);
         playlistDTO = Mockito.mock(PlaylistDTO.class);
+        trackDTO = Mockito.mock(TrackDTO.class);
     }
 
     @Test
@@ -53,6 +55,34 @@ public class PlaylistControllerTest {
         Assertions.assertEquals(404, response.getStatus());
     }
 
-//    @Test
-//    void testShouldReturn200If
+    @Test
+    void testShouldReturn200IfAllTracksOfAnExistingPlaylistRequested(){
+        int id = Mockito.anyInt();
+        Mockito.when(playlistService.find(id)).thenReturn(playlistDTO);
+        Response response = playlistController.tracks(id);
+
+        Assertions.assertEquals(200, response.getStatus());
+    }
+
+    @Test
+    void testShouldReturn200IfTheGivenPlaylistPossessesTheRequestedTrack(){
+        int id = Mockito.anyInt();
+        Mockito.when(playlistService.find(id)).thenReturn(playlistDTO);
+        Mockito.when(playlistService.findTrack(playlistDTO, id)).thenReturn(trackDTO);
+
+        Response response = playlistController.track(id, id);
+
+        Assertions.assertEquals(200, response.getStatus());
+    }
+
+    @Test
+    void testShouldReturn404IfTheGivenPlaylistNotPossessesTheRequestedTrack(){
+        int id = Mockito.anyInt();
+        Mockito.when(playlistService.find(id)).thenReturn(playlistDTO);
+        Mockito.when(playlistService.findTrack(playlistDTO, id)).thenReturn(null);
+
+        Response response = playlistController.track(id, id);
+
+        Assertions.assertEquals(404, response.getStatus());
+    }
 }

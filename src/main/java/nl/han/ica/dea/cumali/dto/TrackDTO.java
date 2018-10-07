@@ -10,8 +10,9 @@ public class TrackDTO {
     private String publicationDate;
     private String description;
     private boolean offlineAvailable;
+    private int playlist_id;
 
-    public TrackDTO(int id, String title, String performer, int duration, String album, int playcount, String publicationDate, String description, boolean offlineAvailable) {
+    public TrackDTO(int id, String title, String performer, int duration, String album, int playcount, String publicationDate, String description, boolean offlineAvailable, int playlist_id) {
         this.id = id;
         this.title = title;
         this.performer = performer;
@@ -21,6 +22,7 @@ public class TrackDTO {
         this.publicationDate = publicationDate;
         this.description = description;
         this.offlineAvailable = offlineAvailable;
+        this.playlist_id = playlist_id;
     }
 
     public int getId() {
@@ -59,4 +61,7 @@ public class TrackDTO {
         return offlineAvailable;
     }
 
+    public int getPlaylist_id() {
+        return playlist_id;
+    }
 }
