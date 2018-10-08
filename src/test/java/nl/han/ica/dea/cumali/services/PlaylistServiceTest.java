@@ -12,15 +12,16 @@ import java.util.List;
 
 class PlaylistServiceTest {
     private PlaylistService playlistService;
+    private List<PlaylistDTO> playlists;
 
     @BeforeEach
     void setup(){
         playlistService = new PlaylistService();
+        playlists = new ArrayList<>();
     }
 
     @Test
     void testShouldReturnEmptyArrayIfThereAreNoPlaylists(){
-        List<PlaylistDTO> playlists = new ArrayList<>();
         playlistService.setPlaylistCollection(new PlaylistCollectionDTO(playlists, 21312));
 
         Assertions.assertEquals(0, playlistService.all().getPlaylists().size());
@@ -28,33 +29,54 @@ class PlaylistServiceTest {
 
     @Test
     void testShouldReturnPlaylistIfExists(){
+        playlists.add(new PlaylistDTO(1,"test", true, null));
+        playlistService.setPlaylistCollection(new PlaylistCollectionDTO(playlists, 21312));
+
         PlaylistDTO playlist = playlistService.find(1);
         Assertions.assertNotNull(playlist);
     }
 
     @Test
     void testShouldReturnNullIfPlaylistNotExists(){
-        PlaylistDTO playlist = playlistService.find(-1);
+        playlistService.setPlaylistCollection(new PlaylistCollectionDTO(playlists, 3213));
+
+        PlaylistDTO playlist = playlistService.find(1);
         Assertions.assertNull(playlist);
     }
 
     @Test
     void testShouldReturnPlaylistWithTheGivenId(){
+        playlists.add(new PlaylistDTO(1,"test", true, null));
+        playlistService.setPlaylistCollection(new PlaylistCollectionDTO(playlists, 3213));
+
         PlaylistDTO playlist = playlistService.find(1);
         Assertions.assertEquals(playlist.getId(), 1);
     }
 
     @Test
     void testShouldReturnTheTrackOfTheGivenPlaylist(){
-        PlaylistDTO playlist = playlistService.find(2);
+        playlists.add(new PlaylistDTO(1,"test", true, null));
+        playlistService.setPlaylistCollection(new PlaylistCollectionDTO(playlists, 3213));
+
+        PlaylistDTO playlist = playlistService.find(1);
+        List<TrackDTO> tracks = new ArrayList<>();
+        tracks.add(new TrackDTO(1, "title", "performer", 123, null, 0, null, null, false, 1));
+        playlist.setTracks(tracks);
+
         TrackDTO track = playlistService.findTrack(playlist, 1);
         Assertions.assertNotNull(track);
     }
 
     @Test
     void testShouldReturnNullIfRequestedTrackOfTheGivenPlaylistNotExists(){
-        PlaylistDTO playlist = playlistService.find(2);
-        TrackDTO track = playlistService.findTrack(playlist, -1);
+        playlists.add(new PlaylistDTO(1,"test", true, null));
+        playlistService.setPlaylistCollection(new PlaylistCollectionDTO(playlists, 3213));
+
+        List<TrackDTO> tracks = new ArrayList<>();
+        PlaylistDTO playlist = playlistService.find(1);
+        playlist.setTracks(tracks);
+
+        TrackDTO track = playlistService.findTrack(playlist, 1);
         Assertions.assertNull(track);
     }
 }

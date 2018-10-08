@@ -1,5 +1,4 @@
 nl\han\ica\dea\cumali\controllers\PlaylistControllerTest.class
-nl\han\ica\dea\cumali\services\LoginServiceTest.class
 nl\han\ica\dea\cumali\controllers\LoginControllerTest.class
 nl\han\ica\dea\cumali\services\TrackServiceTest.class
 nl\han\ica\dea\cumali\services\PlaylistServiceTest.class
