@@ -1,6 +1,6 @@
 package nl.han.ica.dea.cumali.controllers;
 
-import nl.han.ica.dea.cumali.dto.LoginRequestDTO;
+import nl.han.ica.dea.cumali.dto.UserDTO;
 import nl.han.ica.dea.cumali.dto.LoginResponseDTO;
 import nl.han.ica.dea.cumali.services.UserService;
 
@@ -17,7 +17,7 @@ public class LoginController {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response login(LoginRequestDTO request) {
+    public Response login(UserDTO request) {
         if (userService.authenticate(request.getUser(), request.getPassword())) {
             LoginResponseDTO response = new LoginResponseDTO();
             response.setToken("123-456-789");

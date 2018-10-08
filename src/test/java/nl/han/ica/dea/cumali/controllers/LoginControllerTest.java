@@ -1,6 +1,6 @@
 package nl.han.ica.dea.cumali.controllers;
 
-import nl.han.ica.dea.cumali.dto.LoginRequestDTO;
+import nl.han.ica.dea.cumali.dto.UserDTO;
 import nl.han.ica.dea.cumali.services.UserService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,31 +14,31 @@ public class LoginControllerTest
 {
     private LoginController loginController;
     private UserService userService;
-    private LoginRequestDTO loginRequestDTO;
+    private UserDTO userDTO;
     @BeforeEach
      void setup(){
         loginController = new LoginController();
         userService = Mockito.mock(UserService.class);
         loginController.setUserService(userService);
-        loginRequestDTO = Mockito.mock(LoginRequestDTO.class);
+        userDTO = Mockito.mock(UserDTO.class);
 
-        loginRequestDTO.setUser(Mockito.anyString());
-        loginRequestDTO.setPassword(Mockito.anyString());
+        userDTO.setUser(Mockito.anyString());
+        userDTO.setPassword(Mockito.anyString());
     }
 
     @Test
     void testShouldReturn200IfUserAuthenticates(){
-        Mockito.when(userService.authenticate(loginRequestDTO.getUser(), loginRequestDTO.getPassword())).thenReturn(true);
+        Mockito.when(userService.authenticate(userDTO.getUser(), userDTO.getPassword())).thenReturn(true);
 
-        Response response = loginController.login(loginRequestDTO);
+        Response response = loginController.login(userDTO);
         Assertions.assertEquals(200, response.getStatus());
     }
 
     @Test
     void testShouldReturn401IfUserNotAuthenticates(){
-        Mockito.when(userService.authenticate(loginRequestDTO.getUser(),loginRequestDTO.getPassword())).thenReturn(false);
+        Mockito.when(userService.authenticate(userDTO.getUser(), userDTO.getPassword())).thenReturn(false);
 
-        Response response = loginController.login(loginRequestDTO);
+        Response response = loginController.login(userDTO);
         Assertions.assertEquals(401, response.getStatus());
     }
 }

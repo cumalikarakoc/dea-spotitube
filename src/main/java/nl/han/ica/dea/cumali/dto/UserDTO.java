@@ -1,6 +1,6 @@
 package nl.han.ica.dea.cumali.dto;
 
-public class LoginRequestDTO {
+public class UserDTO {
     private String user;
     private String password;
 

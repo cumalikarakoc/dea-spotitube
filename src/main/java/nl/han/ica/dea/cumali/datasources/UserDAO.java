@@ -1,6 +1,7 @@
 package nl.han.ica.dea.cumali.datasources;
 
 import nl.han.ica.dea.cumali.datasources.util.DatabaseProperties;
+import nl.han.ica.dea.cumali.dto.UserDTO;
 
 import java.sql.*;
 import java.util.logging.Level;
@@ -25,23 +26,24 @@ public class UserDAO {
     }
 
 
-    public boolean authenticate(String username, String password) {
-        boolean userExists = false;
+    public UserDTO getUser(String username) {
+        UserDTO userDTO = new UserDTO();
         try {
             Connection connection = DriverManager.getConnection(databaseProperties.connectionString());
-            PreparedStatement statement = connection.prepareStatement("SELECT * FROM users WHERE name LIKE ? AND password LIKE ?" );
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM users WHERE name LIKE ?" );
             statement.setString(1, username);
-            statement.setString(2, password);
             ResultSet resultSet = statement.executeQuery();
 
             if(resultSet.next()){
-                userExists = true;
+                userDTO.setUser(resultSet.getString("name"));
+                userDTO.setPassword(resultSet.getString("password"));
             }
             statement.close();
             connection.close();
         } catch (SQLException e) {
             logger.log(Level.SEVERE, "Error communicating with database " + databaseProperties.connectionString(), e);
         }
-        return userExists;
+        return  userDTO;
     }
+
 }
