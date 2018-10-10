@@ -25,6 +25,10 @@ public class TrackDTO {
         this.playlist_id = playlist_id;
     }
 
+    public TrackDTO() {
+
+    }
+
     public int getId() {
         return id;
     }

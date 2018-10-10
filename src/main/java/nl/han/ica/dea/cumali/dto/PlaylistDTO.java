@@ -15,6 +15,10 @@ public class PlaylistDTO {
         this.tracks = tracks;
     }
 
+    public PlaylistDTO() {
+
+    }
+
     public int getId() {
         return id;
     }
@@ -33,5 +37,9 @@ public class PlaylistDTO {
 
     public void setTracks(List<TrackDTO> tracks){
         this.tracks = tracks;
+    }
+
+    public boolean getOwner() {
+        return owner;
     }
 }
