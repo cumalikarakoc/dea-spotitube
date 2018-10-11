@@ -20,7 +20,7 @@ public abstract class DAO<T> {
         try {
             connection = DriverManager.getConnection(databaseProperties.connectionString());
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "Error communicating with database " + databaseProperties.connectionString(), e);
         }
 
     }
