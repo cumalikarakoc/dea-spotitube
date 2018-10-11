@@ -5,11 +5,10 @@ import nl.han.ica.dea.cumali.datasources.util.DatabaseProperties;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public abstract class DAO <T>{
+public abstract class DAO<T> {
     private DatabaseProperties databaseProperties;
     private Connection connection;
     private Logger logger = Logger.getLogger(getClass().getName());
@@ -26,11 +25,22 @@ public abstract class DAO <T>{
 
     }
 
-    protected List<T> fetchAllDTOs(T t) {
-        PreparedStatement statement = null;
+    private void tryLoadJdbcDriver(DatabaseProperties databaseProperties) {
+        try {
+            Class.forName(databaseProperties.driver());
+        } catch (ClassNotFoundException e) {
+            logger.log(Level.SEVERE, "Can't load JDBC Driver " + databaseProperties.driver(), e);
+        }
+    }
+
+    protected abstract T getAsDTO(ResultSet resultSet) throws SQLException;
+
+    protected List<T> runQueryToFetchDTOList(String query, Object[] values) {
+        PreparedStatement statement;
         List<T> DTOs = null;
         try {
-            statement = connection.prepareStatement("SELECT * FROM " + getTableName(t));
+            statement = connection.prepareStatement(query);
+            bindParams(values, statement);
             DTOs = getDTOListFromResultSet(statement);
             statement.close();
         } catch (SQLException e) {
@@ -39,33 +49,20 @@ public abstract class DAO <T>{
         return DTOs;
     }
 
-    protected T fetchDTOById(T t, int id){
-        PreparedStatement statement = null;
-        T dto= null;
+    protected void runQuery(String query, Object[] values) {
+        PreparedStatement statement;
         try {
-            statement = connection.prepareStatement("SELECT * FROM " + getTableName(t) + " WHERE id = ?");
-            statement.setInt(1, id);
-            dto = getSingleDTOFromResultSet(statement);
+            statement = connection.prepareStatement(query);
+            bindParams(values, statement);
+            statement.executeQuery();
             statement.close();
         } catch (SQLException e) {
             logger.log(Level.SEVERE, "Error communicating with database " + databaseProperties.connectionString(), e);
         }
-        return dto;
+
     }
 
-    private String getTableName(T t) {
-        String className = t.getClass().getSimpleName();
-        return className.replace("DTO", "s").toLowerCase();
-    }
-
-
-    private T getSingleDTOFromResultSet(PreparedStatement statement) throws SQLException {
-        ResultSet resultSet = statement.executeQuery();
-        resultSet.next();
-        return getAsDTO(resultSet);
-    }
-
-    private List<T> getDTOListFromResultSet(PreparedStatement statement) throws SQLException {
+    protected List<T> getDTOListFromResultSet(PreparedStatement statement) throws SQLException {
         List<T> objectList = new ArrayList<>();
         ResultSet resultSet = statement.executeQuery();
         while (resultSet.next()) {
@@ -74,32 +71,19 @@ public abstract class DAO <T>{
         return objectList;
     }
 
-    protected abstract T getAsDTO(ResultSet resultSet) throws SQLException;
 
-    protected abstract Map setDTOInstanceProperties();
-
-
-    protected void queryToInsertDTO(String tableName){
-        PreparedStatement statement = null;
-        Map dtoProperties = setDTOInstanceProperties();
-
-        try {
-            statement = connection.prepareStatement(tableName);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-    }
-
-
-
-
-
-    private void tryLoadJdbcDriver(DatabaseProperties databaseProperties) {
-        try {
-            Class.forName(databaseProperties.driver());
-        } catch (ClassNotFoundException e) {
-            logger.log(Level.SEVERE, "Can't load JDBC Driver " + databaseProperties.driver(), e);
+    private void bindParams(Object[] values, PreparedStatement statement) throws SQLException {
+        for (int i = 0; i < values.length; i++) {
+            if (values[i] instanceof Integer) {
+                statement.setInt(i + 1, (int) values[i]);
+            }
+            if (values[i] instanceof String) {
+                statement.setString(i + 1, String.valueOf(values[i]));
+            }
+            if (values[i] instanceof Boolean) {
+                statement.setBoolean(i + 1, (boolean) values[i]);
+            }
         }
     }
+
 }

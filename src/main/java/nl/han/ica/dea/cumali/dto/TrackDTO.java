@@ -10,9 +10,10 @@ public class TrackDTO {
     private String publicationDate;
     private String description;
     private boolean offlineAvailable;
-    private int playlist_id;
 
-    public TrackDTO(int id, String title, String performer, int duration, String album, int playcount, String publicationDate, String description, boolean offlineAvailable, int playlist_id) {
+    public TrackDTO() {}
+
+    public TrackDTO(int id, String title, String performer, int duration, String album, int playcount, String publicationDate, String description, boolean offlineAvailable) {
         this.id = id;
         this.title = title;
         this.performer = performer;
@@ -22,11 +23,6 @@ public class TrackDTO {
         this.publicationDate = publicationDate;
         this.description = description;
         this.offlineAvailable = offlineAvailable;
-        this.playlist_id = playlist_id;
-    }
-
-    public TrackDTO() {
-
     }
 
     public int getId() {
@@ -61,11 +57,43 @@ public class TrackDTO {
         return description;
     }
 
-    public boolean isOfflineAvailable() {
+    public boolean getOfflineAvailable() {
         return offlineAvailable;
     }
 
-    public int getPlaylist_id() {
-        return playlist_id;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setPerformer(String performer) {
+        this.performer = performer;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public void setAlbum(String album) {
+        this.album = album;
+    }
+
+    public void setPlaycount(int playcount) {
+        this.playcount = playcount;
+    }
+
+    public void setPublicationDate(String publicationDate) {
+        this.publicationDate = publicationDate;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setOfflineAvailable(boolean offlineAvailable) {
+        this.offlineAvailable = offlineAvailable;
     }
 }

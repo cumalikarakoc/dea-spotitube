@@ -20,7 +20,10 @@ public class LoginController {
     public Response login(UserDTO request) {
         if (userService.authenticate(request.getUser(), request.getPassword())) {
             LoginResponseDTO response = new LoginResponseDTO();
+
+            // TODO: manage tokens in the database
             response.setToken("123-456-789");
+
             response.setUser(request.getUser());
             return Response.ok(response).build();
         }

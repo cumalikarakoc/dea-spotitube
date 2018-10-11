@@ -12,9 +12,8 @@ class UserServiceTest {
         userService = new UserService();
     }
 
-    /**
-     * Need kind of memory for this test
-     */
+
+     //TODO: Need to save some data for this test
 //    @Test
 //    void testShouldReturnTrueGivenCorrectUserCredentials(){
 //        boolean returnValue = userService.authenticate("cumali", "admin123");

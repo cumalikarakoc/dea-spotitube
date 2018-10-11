@@ -6,7 +6,10 @@ public class PlaylistDTO {
     private int id;
     private String name;
     private boolean owner;
+
     private List<TrackDTO> tracks;
+
+    public PlaylistDTO() {}
 
     public PlaylistDTO(int id, String name, boolean owner, List<TrackDTO> tracks) {
         this.id = id;
@@ -15,20 +18,12 @@ public class PlaylistDTO {
         this.tracks = tracks;
     }
 
-    public PlaylistDTO() {
-
-    }
-
     public int getId() {
         return id;
     }
 
     public String getName() {
         return name;
-    }
-
-    public boolean isOwner() {
-        return owner;
     }
 
     public List<TrackDTO> getTracks() {
@@ -41,5 +36,17 @@ public class PlaylistDTO {
 
     public boolean getOwner() {
         return owner;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setOwner(boolean owner) {
+        this.owner = owner;
     }
 }
