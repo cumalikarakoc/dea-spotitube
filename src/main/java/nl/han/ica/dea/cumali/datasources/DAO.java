@@ -77,9 +77,10 @@ public abstract class DAO<T> {
 
     protected List<T> getDTOListFromResultSet(PreparedStatement statement) throws SQLException {
         List<T> objectList = new ArrayList<>();
-        ResultSet resultSet = statement.executeQuery();
-        while (resultSet.next()) {
-            objectList.add(getAsDTO(resultSet));
+        try (ResultSet resultSet = statement.executeQuery()) {
+            while (resultSet.next()) {
+                objectList.add(getAsDTO(resultSet));
+            }
         }
         return objectList;
     }
