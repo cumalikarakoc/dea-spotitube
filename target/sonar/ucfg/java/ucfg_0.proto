@@ -1,36 +1,0 @@
-
-Tnl.han.ica.dea.cumali.controllers.HomeController#routes()Ljavax/ws/rs/core/Response;
-__unknown_file ("1*¢	
-1Å
-wC:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\controllers\HomeController.java (BÂ
-‚
-Å
-wC:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\controllers\HomeController.java (:
-%0"__concat**(
-&<a href='/playlists'>Playlists</a><br>* 
-<a href ='tracks'>Tracks</a>°
-û
-Å
-wC:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\controllers\HomeController.java (;
-
-response"__id*
-
-%0ó
-î
-Å
-wC:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\controllers\HomeController.java ($
-%1"[javax.ws.rs.core.Response#ok(Ljava/lang/Object;)Ljavax/ws/rs/core/Response$ResponseBuilder;*"
-javax.ws.rs.core.Response*
-
-
-response„
-‡
-Å
-wC:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\controllers\HomeController.java (,
-%2"Ljavax.ws.rs.core.Response$ResponseBuilder#build()Ljavax/ws/rs/core/Response;*
-
-%1"å
-Å
-wC:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\controllers\HomeController.java (-
-
-%2

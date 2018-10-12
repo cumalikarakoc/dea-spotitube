@@ -12,7 +12,8 @@ public class HomeController {
     @GET
     @Produces(MediaType.TEXT_HTML)
     public Response routes(){
-        String response = "<a href='/playlists'>Playlists</a><br>" +
+        String response = "<h3>Restful API for spotitube client</h3>" +
+                "<a href='/playlists'>Playlists</a><br>" +
                             "<a href ='tracks'>Tracks</a>";
         return Response.ok(response).build();
     }

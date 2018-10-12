@@ -9,27 +9,21 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public abstract class DAO<T> {
+    private static final String DATABASE_ERROR = "Error communicating with database ";
+    private static final String DRIVER_ERROR = "Can't load JDBC Driver ";
     private DatabaseProperties databaseProperties;
-    private Connection connection;
     private Logger logger = Logger.getLogger(getClass().getName());
 
     DAO() {
         databaseProperties = new DatabaseProperties();
         tryLoadJdbcDriver(databaseProperties);
-
-        try {
-            connection = DriverManager.getConnection(databaseProperties.connectionString());
-        } catch (SQLException e) {
-            logger.log(Level.SEVERE, "Error communicating with database " + databaseProperties.connectionString(), e);
-        }
-
     }
 
     private void tryLoadJdbcDriver(DatabaseProperties databaseProperties) {
         try {
             Class.forName(databaseProperties.driver());
         } catch (ClassNotFoundException e) {
-            logger.log(Level.SEVERE, "Can't load JDBC Driver " + databaseProperties.driver(), e);
+            logger.log(Level.SEVERE, DRIVER_ERROR + databaseProperties.driver(), e);
         }
     }
 
@@ -37,29 +31,48 @@ public abstract class DAO<T> {
 
     protected List<T> runQueryToFetchDTOList(String query, Object[] values) {
         PreparedStatement statement;
+        Connection connection = null;
         List<T> DTOs = null;
         try {
+            connection = DriverManager.getConnection(databaseProperties.connectionString());
             statement = connection.prepareStatement(query);
             bindParams(values, statement);
             DTOs = getDTOListFromResultSet(statement);
             statement.close();
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, "Error communicating with database " + databaseProperties.connectionString(), e);
+            logger.log(Level.SEVERE, DATABASE_ERROR + databaseProperties.connectionString(), e);
+        } finally {
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                logger.log(Level.SEVERE, DATABASE_ERROR + databaseProperties.connectionString(), e);
+            }
         }
         return DTOs;
     }
 
     protected void runQuery(String query, Object[] values) {
         PreparedStatement statement;
+        Connection connection = null;
         try {
+            connection = DriverManager.getConnection(databaseProperties.connectionString());
             statement = connection.prepareStatement(query);
             bindParams(values, statement);
             statement.executeQuery();
             statement.close();
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, "Error communicating with database " + databaseProperties.connectionString(), e);
+            logger.log(Level.SEVERE, DATABASE_ERROR + databaseProperties.connectionString(), e);
+        } finally {
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                logger.log(Level.SEVERE, DATABASE_ERROR + databaseProperties.connectionString(), e);
+            }
         }
-
     }
 
     protected List<T> getDTOListFromResultSet(PreparedStatement statement) throws SQLException {

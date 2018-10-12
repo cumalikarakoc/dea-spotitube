@@ -3,6 +3,7 @@ package nl.han.ica.dea.cumali.controllers;
 import nl.han.ica.dea.cumali.datasources.PlaylistDAO;
 import nl.han.ica.dea.cumali.dto.PlaylistCollectionDTO;
 import nl.han.ica.dea.cumali.dto.PlaylistDTO;
+import nl.han.ica.dea.cumali.dto.TrackCollectionDTO;
 import nl.han.ica.dea.cumali.dto.TrackDTO;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,8 +17,8 @@ public class PlaylistControllerTest {
     private PlaylistDAO playlistDAO;
     private PlaylistController playlistController;
     private PlaylistCollectionDTO playlistCollectionDTO;
+    private TrackCollectionDTO trackCollectionDTO;
     private PlaylistDTO playlistDTO;
-    private TrackDTO trackDTO;
 
     @BeforeEach
     void setup(){
@@ -25,8 +26,8 @@ public class PlaylistControllerTest {
         playlistDAO = Mockito.mock(PlaylistDAO.class);
         playlistController.setPlaylistDAO(playlistDAO);
         playlistCollectionDTO = Mockito.mock(PlaylistCollectionDTO.class);
+        trackCollectionDTO = Mockito.mock(TrackCollectionDTO.class);
         playlistDTO = Mockito.mock(PlaylistDTO.class);
-        trackDTO = Mockito.mock(TrackDTO.class);
     }
 
     @Test
@@ -60,6 +61,54 @@ public class PlaylistControllerTest {
         int id = Mockito.anyInt();
         Mockito.when(playlistDAO.find(id)).thenReturn(playlistDTO);
         Response response = playlistController.tracks(id);
+
+        Assertions.assertEquals(200, response.getStatus());
+    }
+
+    @Test
+    void testShouldReturn200IfGivenTrackOfPlaylistIsDeleted(){
+        int playlistId = Mockito.anyInt();
+        int trackId = Mockito.anyInt();
+        Mockito.when(playlistDAO.removeTrackFromPlaylist(playlistId, trackId)).thenReturn(trackCollectionDTO);
+        Response response = playlistController.detachTrack(playlistId, trackId);
+
+        Assertions.assertEquals(200, response.getStatus());
+    }
+
+    @Test
+    void testShouldReturn200IfTrackAddedToPlaylist(){
+        int playlistId = Mockito.anyInt();
+        TrackDTO trackDTO = Mockito.anyObject();
+        Mockito.when(playlistDAO.addTrackToPlaylist(playlistId, trackDTO)).thenReturn(trackCollectionDTO);
+        Response response = playlistController.attachTrack(playlistId, trackDTO);
+
+        Assertions.assertEquals(200, response.getStatus());
+    }
+
+    @Test
+    void testShouldReturn200IfPlaylistIsUpdated(){
+        int playlistId = Mockito.anyInt();
+        PlaylistDTO playlistDTO = Mockito.anyObject();
+        Mockito.when(playlistDAO.update(playlistId, playlistDTO)).thenReturn(playlistCollectionDTO);
+        Response response = playlistController.update(playlistId, playlistDTO);
+
+        Assertions.assertEquals(200, response.getStatus());
+    }
+
+    @Test
+    void testShouldReturn200IfNewPlaylistIsCreated(){
+        PlaylistDTO playlistDTO = Mockito.anyObject();
+        Mockito.when(playlistDAO.save(playlistDTO)).thenReturn(playlistCollectionDTO);
+        Response response = playlistController.store(playlistDTO);
+
+        Assertions.assertEquals(200, response.getStatus());
+    }
+
+    @Test
+    void testShouldReturn200IfNewPlaylistIsDeleted(){
+        int id = Mockito.anyInt();
+        Mockito.when(playlistDAO.delete(id)).thenReturn(playlistCollectionDTO);
+        Response response = playlistController.destroy(id);
 
         Assertions.assertEquals(200, response.getStatus());
     }

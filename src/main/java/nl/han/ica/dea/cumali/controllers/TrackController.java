@@ -14,14 +14,14 @@ public class TrackController {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response tracks() {
+    public Response index() {
         return Response.ok(trackDAO.all()).build();
     }
 
     @GET
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response track(@PathParam("id") int id) {
+    public Response show(@PathParam("id") int id) {
         if (trackDAO.find(id) != null) {
             return Response.ok(trackDAO.find(id)).build();
         }

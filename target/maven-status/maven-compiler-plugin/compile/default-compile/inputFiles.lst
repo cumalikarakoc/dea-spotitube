@@ -5,13 +5,12 @@ C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea
 C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\dto\PlaylistDTO.java
 C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\controllers\TrackController.java
 C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\dto\TrackDTO.java
+C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\datasources\DAO.java
 C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\datasources\TrackDAO.java
-C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\dto\LoginRequestDTO.java
 C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\dto\LoginResponseDTO.java
-C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\services\PlaylistService.java
-C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\services\TrackService.java
 C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\datasources\PlaylistDAO.java
 C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\controllers\LoginController.java
 C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\datasources\util\DatabaseProperties.java
 C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\dto\TrackCollectionDTO.java
+C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\dto\UserDTO.java
 C:\Users\cumal\Documents\dea-projects\dea-spotitube\src\main\java\nl\han\ica\dea\cumali\controllers\HomeController.java
