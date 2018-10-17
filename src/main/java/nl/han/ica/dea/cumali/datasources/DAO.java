@@ -30,18 +30,18 @@ public abstract class DAO<T> {
 
     protected List<T> runQueryToFetchDTOList(String query, Object[] values) {
         PreparedStatement statement;
-        List<T> DTOs = null;
+        List<T> objectList = null;
         try {
             Connection connection = databaseProperties.getConnection();
             statement = connection.prepareStatement(query);
             bindParams(values, statement);
-            DTOs = getDTOListFromResultSet(statement);
+            objectList = getDTOListFromResultSet(statement);
             statement.close();
             connection.close();
         } catch (SQLException e) {
             logger.log(Level.SEVERE, DATABASE_ERROR + databaseProperties.connectionString(), e);
         }
-        return DTOs;
+        return objectList;
     }
 
     protected void runQuery(String query, Object[] values) {
