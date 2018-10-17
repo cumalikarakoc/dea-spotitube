@@ -9,15 +9,6 @@ public class PlaylistDTO {
 
     private List<TrackDTO> tracks;
 
-    public PlaylistDTO() {}
-
-    public PlaylistDTO(int id, String name, boolean owner, List<TrackDTO> tracks) {
-        this.id = id;
-        this.name = name;
-        this.owner = owner;
-        this.tracks = tracks;
-    }
-
     public int getId() {
         return id;
     }

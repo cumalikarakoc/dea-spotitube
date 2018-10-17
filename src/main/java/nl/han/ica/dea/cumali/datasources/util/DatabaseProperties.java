@@ -1,6 +1,9 @@
 package nl.han.ica.dea.cumali.datasources.util;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -8,6 +11,7 @@ import java.util.logging.Logger;
     public class DatabaseProperties {
         private Logger logger = Logger.getLogger(getClass().getName());
         private Properties properties;
+        private Connection connection;
 
         public DatabaseProperties() {
             properties = new Properties();
@@ -27,4 +31,13 @@ import java.util.logging.Logger;
         {
             return properties.getProperty("connectionString");
         }
-}
+
+        public Connection getConnection() {
+            try {
+                connection = DriverManager.getConnection(connectionString());
+            } catch (SQLException e) {
+                logger.log(Level.SEVERE, "Error communicating with database " + connectionString(), e);
+            }
+            return connection;
+        }
+    }

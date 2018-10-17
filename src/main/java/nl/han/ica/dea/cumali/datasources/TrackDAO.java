@@ -29,16 +29,18 @@ public class TrackDAO extends DAO<TrackDTO> {
 
     @Override
     protected TrackDTO getAsDTO(ResultSet resultSet) throws SQLException {
-        return new TrackDTO(resultSet.getInt("id"), resultSet.getString("title"), resultSet.getString("performer"), resultSet.getInt("duration"),
-                resultSet.getString("album"), resultSet.getInt("playcount"), resultSet.getString("publicationDate"),
-                resultSet.getString("description"), resultSet.getBoolean("offlineAvailable"));
-    }
+        TrackDTO trackDTO = new TrackDTO();
 
+        trackDTO.setId(resultSet.getInt("id"));
+        trackDTO.setTitle(resultSet.getString("title"));
+        trackDTO.setPerformer(resultSet.getString("performer"));
+        trackDTO.setDuration(resultSet.getInt("duration"));
+        trackDTO.setAlbum(resultSet.getString("album"));
+        trackDTO.setPlaycount(resultSet.getInt("playcount"));
+        trackDTO.setPublicationDate(resultSet.getString("publicationDate"));
+        trackDTO.setDescription(resultSet.getString("description"));
+        trackDTO.setOfflineAvailable(resultSet.getBoolean("offlineAvailable"));
 
-    public TrackCollectionDTO save(TrackDTO trackDTO) {
-        Object[] values = {trackDTO.getTitle(), trackDTO.getPerformer(), trackDTO.getDuration(), trackDTO.getAlbum(), trackDTO.getPlaycount(),
-                trackDTO.getPublicationDate(), trackDTO.getDescription(), trackDTO.getOfflineAvailable()};
-        runQuery("INSERT INTO tracks(title, performer, duration, album, playcount, publicationDate, description, offlineAvailable) VALUES(?,?,?,?,?,?,?,?)", values);
-        return all();
+        return trackDTO;
     }
 }

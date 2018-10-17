@@ -12,7 +12,7 @@ import java.util.List;
 public class PlaylistDAO extends DAO<PlaylistDTO> {
 
 
-    public static final int LENGTH = 11111;
+    private static final int LENGTH = 11111;
 
     public PlaylistCollectionDTO all() {
         Object[] values = new Object[0];
@@ -58,8 +58,13 @@ public class PlaylistDAO extends DAO<PlaylistDTO> {
 
     @Override
     public PlaylistDTO getAsDTO(ResultSet resultSet) throws SQLException {
-        PlaylistDTO playlistDTO = new PlaylistDTO(resultSet.getInt("id"), resultSet.getString("name"), resultSet.getBoolean("owner"), null);
+        PlaylistDTO playlistDTO = new PlaylistDTO();
+
+        playlistDTO.setId(resultSet.getInt("id"));
+        playlistDTO.setName(resultSet.getString("name"));
+        playlistDTO.setOwner(resultSet.getBoolean("owner"));
         playlistDTO.setTracks(tracksBelongToPlaylist(playlistDTO.getId()));
+
         return playlistDTO;
     }
 

@@ -3,6 +3,7 @@ package nl.han.ica.dea.cumali.controllers;
 import nl.han.ica.dea.cumali.dto.UserDTO;
 import nl.han.ica.dea.cumali.dto.LoginResponseDTO;
 import nl.han.ica.dea.cumali.services.UserService;
+import org.apache.commons.lang.RandomStringUtils;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -21,10 +22,11 @@ public class LoginController {
         if (userService.authenticate(request.getUser(), request.getPassword())) {
             LoginResponseDTO response = new LoginResponseDTO();
 
-            // TODO: manage tokens in the database
-            response.setToken("123-456-789");
-
+            response.setToken(RandomStringUtils.randomAscii(100));
             response.setUser(request.getUser());
+
+            userService.persistToken(response.getUser(), response.getToken());
+
             return Response.ok(response).build();
         }
         return Response.status(401).build();

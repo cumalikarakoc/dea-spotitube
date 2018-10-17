@@ -6,8 +6,8 @@ public class UserDTO {
 
     public UserDTO(){}
 
-    public UserDTO(String name, String password) {
-        user = name;
+    public UserDTO(String user, String password) {
+        this.user = user;
         this.password = password;
     }
 
