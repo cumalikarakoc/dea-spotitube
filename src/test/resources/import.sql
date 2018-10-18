@@ -27,7 +27,7 @@ CREATE TABLE `playlists` (
 DROP TABLE IF EXISTS `tracks`;
 CREATE TABLE `tracks` (
   `id`       INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-  `title`     VARCHAR(255) DEFAULT NULL,
+  `title`     VARCHAR(255) NOT NULL,
   `performer`     VARCHAR(255) DEFAULT NULL,
   `duration`     INT DEFAULT 0,
   `album`     VARCHAR(255) DEFAULT NULL,
