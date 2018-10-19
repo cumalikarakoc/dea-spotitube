@@ -1,6 +1,6 @@
 package nl.han.ica.dea.cumali.controllers;
 
-import nl.han.ica.dea.cumali.dto.UserDTO;
+import nl.han.ica.dea.cumali.dtos.UserDTO;
 import nl.han.ica.dea.cumali.services.UserService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,4 +1,4 @@
-package nl.han.ica.dea.cumali.dto;
+package nl.han.ica.dea.cumali.dtos;
 
 public class LoginResponseDTO {
     private String user;

@@ -1,7 +1,7 @@
 package nl.han.ica.dea.cumali.controllers;
 
-import nl.han.ica.dea.cumali.dto.UserDTO;
-import nl.han.ica.dea.cumali.dto.LoginResponseDTO;
+import nl.han.ica.dea.cumali.dtos.UserDTO;
+import nl.han.ica.dea.cumali.dtos.LoginResponseDTO;
 import nl.han.ica.dea.cumali.services.UserService;
 import org.apache.commons.lang.RandomStringUtils;
 

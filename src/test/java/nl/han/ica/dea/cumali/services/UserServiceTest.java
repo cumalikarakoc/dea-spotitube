@@ -1,8 +1,7 @@
 package nl.han.ica.dea.cumali.services;
 
 import nl.han.ica.dea.cumali.datasources.UserDAO;
-import nl.han.ica.dea.cumali.datasources.UserDAOTest;
-import nl.han.ica.dea.cumali.dto.UserDTO;
+import nl.han.ica.dea.cumali.dtos.UserDTO;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

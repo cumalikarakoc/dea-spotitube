@@ -1,7 +1,7 @@
 package nl.han.ica.dea.cumali.datasources;
 
-import nl.han.ica.dea.cumali.dto.PlaylistDTO;
-import nl.han.ica.dea.cumali.dto.TrackDTO;
+import nl.han.ica.dea.cumali.dtos.PlaylistDTO;
+import nl.han.ica.dea.cumali.dtos.TrackDTO;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

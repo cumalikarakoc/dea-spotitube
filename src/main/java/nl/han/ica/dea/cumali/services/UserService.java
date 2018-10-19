@@ -2,7 +2,7 @@ package nl.han.ica.dea.cumali.services;
 
 
 import nl.han.ica.dea.cumali.datasources.UserDAO;
-import nl.han.ica.dea.cumali.dto.UserDTO;
+import nl.han.ica.dea.cumali.dtos.UserDTO;
 
 import javax.inject.Inject;
 

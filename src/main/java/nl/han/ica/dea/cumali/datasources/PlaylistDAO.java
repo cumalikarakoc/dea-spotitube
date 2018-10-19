@@ -1,9 +1,9 @@
 package nl.han.ica.dea.cumali.datasources;
 
-import nl.han.ica.dea.cumali.dto.PlaylistCollectionDTO;
-import nl.han.ica.dea.cumali.dto.PlaylistDTO;
-import nl.han.ica.dea.cumali.dto.TrackCollectionDTO;
-import nl.han.ica.dea.cumali.dto.TrackDTO;
+import nl.han.ica.dea.cumali.dtos.PlaylistCollectionDTO;
+import nl.han.ica.dea.cumali.dtos.PlaylistDTO;
+import nl.han.ica.dea.cumali.dtos.TrackCollectionDTO;
+import nl.han.ica.dea.cumali.dtos.TrackDTO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

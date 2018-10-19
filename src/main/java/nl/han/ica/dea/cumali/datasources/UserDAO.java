@@ -1,6 +1,6 @@
 package nl.han.ica.dea.cumali.datasources;
 
-import nl.han.ica.dea.cumali.dto.UserDTO;
+import nl.han.ica.dea.cumali.dtos.UserDTO;
 
 import java.sql.*;
 import java.util.List;

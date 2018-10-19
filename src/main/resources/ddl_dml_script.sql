@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS `tracks` (
 CREATE TABLE IF NOT EXISTS `playlist_track` (
   `playlist_id`  INT NOT NULL,
   `track_id`     INT NOT NULL,
+  PRIMARY KEY (`playlist_id`, `track_id`),
   FOREIGN KEY (`playlist_id`) REFERENCES `playlists`(`id`) ON UPDATE CASCADE  ON DELETE CASCADE,
   FOREIGN KEY (`track_id`) REFERENCES `tracks`(`id`) ON UPDATE CASCADE  ON DELETE CASCADE
 );

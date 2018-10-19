@@ -1,8 +1,8 @@
 package nl.han.ica.dea.cumali.controllers;
 
 import nl.han.ica.dea.cumali.datasources.TrackDAO;
-import nl.han.ica.dea.cumali.dto.TrackCollectionDTO;
-import nl.han.ica.dea.cumali.dto.TrackDTO;
+import nl.han.ica.dea.cumali.dtos.TrackCollectionDTO;
+import nl.han.ica.dea.cumali.dtos.TrackDTO;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

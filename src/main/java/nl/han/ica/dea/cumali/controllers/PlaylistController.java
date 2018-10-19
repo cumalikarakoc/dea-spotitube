@@ -1,9 +1,9 @@
 package nl.han.ica.dea.cumali.controllers;
 
 import nl.han.ica.dea.cumali.datasources.PlaylistDAO;
-import nl.han.ica.dea.cumali.dto.PlaylistDTO;
-import nl.han.ica.dea.cumali.dto.TrackCollectionDTO;
-import nl.han.ica.dea.cumali.dto.TrackDTO;
+import nl.han.ica.dea.cumali.dtos.PlaylistDTO;
+import nl.han.ica.dea.cumali.dtos.TrackCollectionDTO;
+import nl.han.ica.dea.cumali.dtos.TrackDTO;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
