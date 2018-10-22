@@ -56,7 +56,6 @@ public abstract class DAO<T> {
         } catch (SQLException e) {
             logger.log(Level.SEVERE, DATABASE_ERROR+ databaseProperties.connectionString(), e);
         }
-
     }
 
     private List<T> getDTOListFromResultSet(PreparedStatement statement) throws SQLException {
@@ -68,7 +67,6 @@ public abstract class DAO<T> {
         }
         return objectList;
     }
-
 
     private void bindParams(Object[] values, PreparedStatement statement) throws SQLException {
         for (int i = 0; i < values.length; i++) {

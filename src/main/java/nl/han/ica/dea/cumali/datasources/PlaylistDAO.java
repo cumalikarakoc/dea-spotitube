@@ -12,13 +12,22 @@ import java.util.List;
 public class PlaylistDAO extends DAO<PlaylistDTO> {
 
 
-    private static final int LENGTH = 11111;
 
     public PlaylistCollectionDTO all(String token) {
         Object[] values = new Object[0];
         List<PlaylistDTO> playlists = runQueryToFetchDTOList("SELECT * FROM playlists", values);
         handleOwner(playlists, token);
-        return new PlaylistCollectionDTO(playlists, LENGTH);
+        return new PlaylistCollectionDTO(playlists, calculateTotalLength(playlists));
+    }
+
+    private int calculateTotalLength(List<PlaylistDTO> playlists) {
+        int sum = 0;
+        for (PlaylistDTO playlistDTO: playlists){
+            for(TrackDTO trackDTO: playlistDTO.getTracks()){
+                sum += trackDTO.getDuration();
+            }
+        }
+        return sum;
     }
 
     private void handleOwner(List<PlaylistDTO> playlists, String token) {
@@ -61,14 +70,19 @@ public class PlaylistDAO extends DAO<PlaylistDTO> {
     }
 
     public TrackCollectionDTO removeTrackFromPlaylist(int playlistId, int trackId) {
-        Object[] columnValues = {playlistId, trackId};
-        runQuery("DELETE FROM playlist_track WHERE playlist_id = ? AND track_id = ?", columnValues);
+        Object[] values = {playlistId, trackId};
+        runQuery("DELETE FROM playlist_track WHERE playlist_id = ? AND track_id = ?", values);
         return new TrackCollectionDTO(find(playlistId).getTracks());
     }
 
     public TrackCollectionDTO addTrackToPlaylist(int playlistId, TrackDTO trackDTO) {
-        Object[] columnValues = {playlistId, trackDTO.getId()};
-        runQuery("INSERT INTO playlist_track(playlist_id, track_id) VALUES(?, ?)", columnValues);
+        //add the track to the associative table
+        Object[] valuesForInserting = {playlistId, trackDTO.getId()};
+        runQuery("INSERT INTO playlist_track(playlist_id, track_id) VALUES(?, ?)", valuesForInserting);
+
+        //update the offlineAvailable value of the track
+        Object[] valuesForEditing = {trackDTO.getOfflineAvailable(), trackDTO.getId()};
+        runQuery("UPDATE tracks SET offlineAvailable = ? WHERE id = ?", valuesForEditing);
         return new TrackCollectionDTO(find(playlistId).getTracks());
     }
 
