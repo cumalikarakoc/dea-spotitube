@@ -14,8 +14,8 @@ public class TrackController {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response index() {
-        return Response.ok(trackDAO.all()).build();
+    public Response index(@QueryParam("forPlaylist") int playlistId) {
+        return Response.ok(trackDAO.all(playlistId)).build();
     }
 
     @GET

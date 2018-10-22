@@ -27,8 +27,9 @@ public class TrackControllerTest {
 
     @Test
     void testShouldReturn200IfAllTracksRequested(){
-        Mockito.when(trackDAO.all()).thenReturn(trackCollectionDTO);
-        Response response = trackController.index();
+        int forPlaylist = Mockito.anyInt();
+        Mockito.when(trackDAO.all(forPlaylist)).thenReturn(trackCollectionDTO);
+        Response response = trackController.index(forPlaylist);
 
         Assertions.assertEquals(200, response.getStatus());
     }

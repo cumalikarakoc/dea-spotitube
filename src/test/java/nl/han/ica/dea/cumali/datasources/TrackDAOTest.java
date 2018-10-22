@@ -14,7 +14,7 @@ public class TrackDAOTest extends DAOTest{
 
     @Test
     void testShouldReturnTwoTracks(){
-        int numberOfTracks  = trackDAO.all().getTracks().size();
+        int numberOfTracks  = trackDAO.all(1).getTracks().size();
 
         Assertions.assertEquals(2, numberOfTracks);
     }

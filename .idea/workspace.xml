@@ -8,20 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7112a272-8618-42c5-8328-297aa5788aef" name="Default Changelist" comment="query paramaters&#10;handle owner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dtos/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dtos/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/TrackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/TrackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/TrackDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/TrackDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ddl_dml_script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mySql_DML_DDL.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/LoginControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/LoginControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/PlaylistDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/PlaylistDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/UserDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/UserDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/TrackControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/TrackControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/TrackDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/TrackDAOTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +25,7 @@
     <SUITE FILE_PATH="coverage/dea_spotitube$nl_han_ica_dea_cumali_controllers_in_dea_spotitube.ic" NAME="nl.han.ica.dea.cumali.controllers in dea-spotitube Coverage Results" MODIFIED="1540217617860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>nl.han.ica.dea.cumali.controllers.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/dea_spotitube$nl_han_ica_dea_cumali_in_dea_spotitube.ic" NAME="nl.han.ica.dea.cumali in dea-spotitube Coverage Results" MODIFIED="1540218339827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/dea_spotitube$nl_han_ica_dea_cumali_in_dea_spotitube.ic" NAME="nl.han.ica.dea.cumali in dea-spotitube Coverage Results" MODIFIED="1540244729442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>nl.han.ica.dea.cumali.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/dea_spotitube$PlaylistServiceTest.ic" NAME="PlaylistServiceTest Coverage Results" MODIFIED="1538999663989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -127,9 +118,9 @@
           <entry key="cumali" value="1" />
           <entry key="datasources" value="1" />
           <entry key="dtos" value="1" />
-          <entry key="java" value="372" />
+          <entry key="java" value="384" />
           <entry key="md" value="1" />
-          <entry key="properties" value="23" />
+          <entry key="properties" value="24" />
           <entry key="services" value="1" />
           <entry key="snippet" value="1" />
           <entry key="sql" value="9" />
@@ -141,9 +132,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="372" />
+          <entry key="JAVA" value="384" />
           <entry key="Markdown" value="1" />
-          <entry key="Properties" value="23" />
+          <entry key="Properties" value="24" />
           <entry key="SQL" value="9" />
           <entry key="Scratch" value="1" />
           <entry key="UML" value="11" />
@@ -154,7 +145,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="205" />
-          <entry key="java" value="34321" />
+          <entry key="java" value="34493" />
           <entry key="properties" value="155" />
           <entry key="sql" value="1871" />
           <entry key="txt" value="1262" />
@@ -164,7 +155,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="34320" />
+          <entry key="JAVA" value="34492" />
           <entry key="PLAIN_TEXT" value="1467" />
           <entry key="Properties" value="155" />
           <entry key="SQL" value="1872" />
@@ -190,10 +181,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/UserDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="493">
+              <caret line="52" column="86" selection-start-line="52" selection-start-column="86" selection-end-line="52" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -202,43 +193,83 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/UserServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/TrackDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="28" column="88" selection-start-line="28" selection-start-column="88" selection-end-line="28" selection-end-column="88" />
+            <state relative-caret-position="136">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="25" column="102" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="102" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/UserService.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/TrackController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="204">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
               <folding>
-                <element signature="e#501#502#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#819#820#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/UserDAOTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/TrackDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="39" column="64" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+            <state relative-caret-position="255">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/TrackControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="23" column="68" lean-forward="true" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="115" column="49" selection-start-line="115" selection-start-column="49" selection-end-line="115" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/PlaylistDAOTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -314,18 +345,14 @@
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/TrackServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/DAOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dto/PlaylistCollectionDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/TrackController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/TrackControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/HomeController.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/HomeControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/TrackDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dto/TrackDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dto/PlaylistDTO.java" />
         <option value="$PROJECT_DIR$/src/test/travis.sql" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dto/UserDTO.java" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/DAOTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/TrackDAOTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/util/ScriptRunner.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/util/DatabaseProperties.java" />
@@ -337,16 +364,20 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/LoginControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/PlaylistDAOTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/import.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/ddl_dml_script.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/mySql_DML_DDL.sql" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/UserDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/TrackDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/TrackController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/TrackDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/TrackControllerTest.java" />
       </list>
     </option>
   </component>
@@ -663,13 +694,6 @@
             </path>
             <path>
               <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -679,10 +703,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Userda&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/UserDAO.java&#10;userDt&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/dtos/UserDTO.java&#10;userS&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/services/UserService.java&#10;dao&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java&#10;playl&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java&#10;pla&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java&#10;user&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/services/UserService.java&#10;Login&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/test/java/nl/han/ica/dea/cumali/controllers/LoginControllerTest.java&#10;login&#9;PSI&#9;JAVA://nl.han.ica.dea.cumali.controllers.LoginControllerTest&#10;lo&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java&#10;contro&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java&#10;plA&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java&#10;loginC&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java&#10;playlistC&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java&#10;imp&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/test/resources/import.sql&#10;databa&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/util/DatabaseProperties.java&#10;userd&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/dto/UserDTO.java&#10;userdto&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/dto/UserDTO.java&#10;propert&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/resources/database.properties" />
+    <property name="SearchEverywhereHistoryKey" value="data&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/resources/database.properties&#10;trac&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/test/java/nl/han/ica/dea/cumali/datasources/TrackDAOTest.java&#10;Userda&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/UserDAO.java&#10;userDt&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/dtos/UserDTO.java&#10;userS&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/services/UserService.java&#10;dao&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java&#10;playl&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java&#10;pla&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java&#10;user&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/services/UserService.java&#10;Login&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/test/java/nl/han/ica/dea/cumali/controllers/LoginControllerTest.java&#10;login&#9;PSI&#9;JAVA://nl.han.ica.dea.cumali.controllers.LoginControllerTest&#10;lo&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java&#10;contro&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java&#10;plA&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java&#10;loginC&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java&#10;playlistC&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java&#10;imp&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/test/resources/import.sql&#10;databa&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/util/DatabaseProperties.java&#10;userd&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/dto/UserDTO.java&#10;userdto&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/dto/UserDTO.java&#10;propert&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/resources/database.properties" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540220236449" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540244912838" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -723,7 +747,21 @@
     </option>
   </component>
   <component name="RunManager" selected="TomEE Server.jee">
-    <configuration name="PlaylistDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrackControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dea-spotitube" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.han.ica.dea.cumali.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.han.ica.dea.cumali.controllers" />
+      <option name="MAIN_CLASS_NAME" value="nl.han.ica.dea.cumali.controllers.TrackControllerTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrackDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dea-spotitube" />
       <extension name="coverage">
         <pattern>
@@ -732,7 +770,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="nl.han.ica.dea.cumali.datasources" />
-      <option name="MAIN_CLASS_NAME" value="nl.han.ica.dea.cumali.datasources.PlaylistDAOTest" />
+      <option name="MAIN_CLASS_NAME" value="nl.han.ica.dea.cumali.datasources.TrackDAOTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -774,20 +812,6 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="nl.han.ica.dea.cumali" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="nl.han.ica.dea.cumali.datasources in dea-spotitube" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dea-spotitube" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nl.han.ica.dea.cumali.datasources.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="nl.han.ica.dea.cumali.datasources" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -867,18 +891,18 @@
     <list>
       <item itemvalue="TomEE Server.jee" />
       <item itemvalue="JUnit.nl.han.ica.dea.cumali in dea-spotitube" />
-      <item itemvalue="JUnit.nl.han.ica.dea.cumali.datasources in dea-spotitube" />
-      <item itemvalue="JUnit.PlaylistDAOTest" />
       <item itemvalue="JUnit.UserDAOTest" />
       <item itemvalue="JUnit.UserServiceTest" />
+      <item itemvalue="JUnit.TrackDAOTest" />
+      <item itemvalue="JUnit.TrackControllerTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.nl.han.ica.dea.cumali in dea-spotitube" />
+        <item itemvalue="JUnit.TrackControllerTest" />
+        <item itemvalue="JUnit.TrackDAOTest" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserDAOTest" />
-        <item itemvalue="JUnit.nl.han.ica.dea.cumali in dea-spotitube" />
-        <item itemvalue="JUnit.nl.han.ica.dea.cumali.datasources in dea-spotitube" />
-        <item itemvalue="JUnit.PlaylistDAOTest" />
       </list>
     </recent_temporary>
   </component>
@@ -924,7 +948,7 @@
       <workItem from="1539944796076" duration="7222000" />
       <workItem from="1540048670290" duration="473000" />
       <workItem from="1540205697882" duration="209000" />
-      <workItem from="1540206081459" duration="13250000" />
+      <workItem from="1540206081459" duration="16751000" />
     </task>
     <task id="LOCAL-00001" summary="unit tests for services">
       <created>1538409795948</created>
@@ -1066,22 +1090,17 @@
       <option name="project" value="LOCAL" />
       <updated>1539951280408</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="query paramaters&#10;handle owner">
+      <created>1540220337928</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1540220337928</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="nl_han_ica_dea_cumali_datasources_in_dea-spotitube - 2018.10.22 at 16h 15m 28s.xml">
-      <configuration name="nl.han.ica.dea.cumali.datasources in dea-spotitube" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlaylistDAOTest - 2018.10.22 at 16h 22m 52s.xml">
-      <configuration name="PlaylistDAOTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="nl_han_ica_dea_cumali_datasources_in_dea-spotitube - 2018.10.22 at 16h 23m 35s.xml">
-      <configuration name="nl.han.ica.dea.cumali.datasources in dea-spotitube" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="nl_han_ica_dea_cumali_datasources_in_dea-spotitube - 2018.10.22 at 16h 24m 09s.xml">
-      <configuration name="nl.han.ica.dea.cumali.datasources in dea-spotitube" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="nl_han_ica_dea_cumali_datasources_in_dea-spotitube - 2018.10.22 at 16h 24m 47s.xml">
       <configuration name="nl.han.ica.dea.cumali.datasources in dea-spotitube" configurationId="JUnit" />
     </history-entry>
@@ -1100,9 +1119,21 @@
     <history-entry file="UserServiceTest - 2018.10.22 at 16h 55m 51s.xml">
       <configuration name="UserServiceTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="nl_han_ica_dea_cumali_in_dea-spotitube - 2018.10.22 at 17h 49m 44s.xml">
+      <configuration name="nl.han.ica.dea.cumali in dea-spotitube" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TrackDAOTest - 2018.10.22 at 23h 44m 52s.xml">
+      <configuration name="TrackDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TrackControllerTest - 2018.10.22 at 23h 44m 58s.xml">
+      <configuration name="TrackControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="nl_han_ica_dea_cumali_in_dea-spotitube - 2018.10.22 at 23h 45m 33s.xml">
+      <configuration name="nl.han.ica.dea.cumali in dea-spotitube" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203668000" />
+    <option name="totallyTimeSpent" value="207169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1115,6 +1146,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990476" visible="true" weight="0.23288591" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1126,15 +1158,15 @@
       <window_info id="Web" order="7" sideWeight="0.50095236" side_tool="true" weight="0.14966443" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4936034" weight="0.34468085" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7946309" visible="true" weight="0.38865247" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49626866" weight="0.4539007" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5063966" side_tool="true" weight="0.36550975" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.4986577" visible="true" weight="0.33617023" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49463087" weight="0.4539007" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5053691" side_tool="true" weight="0.4539007" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49463087" weight="0.33617023" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32907802" />
@@ -1150,7 +1182,7 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" sideWeight="0.49874687" weight="0.3295302" />
       <window_info anchor="right" id="Bean Validation" order="11" weight="0.3295302" />
-      <window_info anchor="right" id="Coverage" order="12" sideWeight="0.5012531" side_tool="true" visible="true" weight="0.3295302" />
+      <window_info anchor="right" id="Coverage" order="12" sideWeight="0.5012531" side_tool="true" weight="0.3295302" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1226,20 +1258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/TrackController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/TrackControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/DriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1262,13 +1280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/TrackDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="87" lean-forward="true" selection-start-line="13" selection-start-column="87" selection-end-line="13" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/PlaylistServiceTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dtos/TrackDTO.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1281,13 +1292,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/TrackDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -1521,48 +1525,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="52" column="86" selection-start-line="52" selection-start-column="86" selection-end-line="52" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="25" column="102" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/import.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="46" column="77" selection-start-line="46" selection-start-column="77" selection-end-line="46" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="25" column="105" selection-start-line="25" selection-start-column="105" selection-end-line="25" selection-end-column="105" />
-          <folding>
-            <element signature="e#3443#3444#0" expanded="true" />
-            <element signature="e#3508#3509#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="115" column="49" selection-start-line="115" selection-start-column="49" selection-end-line="115" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1576,24 +1542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/PlaylistDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dtos/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mySql_DML_DDL.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-192">
@@ -1601,10 +1549,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/UserDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="459">
+          <caret line="39" column="64" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -1618,6 +1566,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="25" column="102" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/UserServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1625,23 +1591,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/UserDAOTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="64" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dtos/UserDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="51">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/TrackDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/TrackController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="52" column="86" selection-start-line="52" selection-start-column="86" selection-end-line="52" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/PlaylistDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/TrackDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="115" column="49" selection-start-line="115" selection-start-column="49" selection-end-line="115" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/controllers/TrackControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="23" column="68" lean-forward="true" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
         </state>
       </provider>
     </entry>

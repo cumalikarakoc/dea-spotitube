@@ -9,9 +9,9 @@ import java.util.List;
 public class TrackDAO extends DAO<TrackDTO> {
 
 
-    public TrackCollectionDTO all() {
-        Object[] values = new Object[0];
-        List<TrackDTO> tracks = runQueryToFetchDTOList("SELECT * FROM tracks", values);
+    public TrackCollectionDTO all(int playlistId) {
+        Object[] values = {playlistId};
+        List<TrackDTO> tracks = runQueryToFetchDTOList("SELECT * FROM tracks WHERE id NOT IN (SELECT track_id FROM playlist_track WHERE playlist_id = ?)", values);
         return new TrackCollectionDTO(tracks);
     }
 
