@@ -6,11 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7112a272-8618-42c5-8328-297aa5788aef" name="Default Changelist" comment="query paramater `forPlaylist` added">
+    <list default="true" id="7112a272-8618-42c5-8328-297aa5788aef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mySql_DML_DDL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mySql_DML_DDL.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,11 +116,11 @@
           <entry key="datasources" value="1" />
           <entry key="dtos" value="1" />
           <entry key="java" value="386" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="properties" value="24" />
           <entry key="services" value="1" />
           <entry key="snippet" value="1" />
-          <entry key="sql" value="9" />
+          <entry key="sql" value="10" />
           <entry key="util" value="1" />
           <entry key="xml" value="19" />
           <entry key="yml" value="4" />
@@ -131,9 +130,9 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="JAVA" value="386" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="Properties" value="24" />
-          <entry key="SQL" value="9" />
+          <entry key="SQL" value="10" />
           <entry key="Scratch" value="1" />
           <entry key="UML" value="11" />
           <entry key="XML" value="19" />
@@ -144,9 +143,10 @@
         <counts>
           <entry key="dummy" value="205" />
           <entry key="java" value="35065" />
+          <entry key="md" value="542" />
           <entry key="properties" value="155" />
-          <entry key="sql" value="1871" />
-          <entry key="txt" value="1298" />
+          <entry key="sql" value="1876" />
+          <entry key="txt" value="1347" />
           <entry key="xml" value="36" />
           <entry key="yml" value="81" />
         </counts>
@@ -154,9 +154,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="35064" />
-          <entry key="PLAIN_TEXT" value="1503" />
+          <entry key="Markdown" value="542" />
+          <entry key="PLAIN_TEXT" value="1552" />
           <entry key="Properties" value="155" />
-          <entry key="SQL" value="1872" />
+          <entry key="SQL" value="1877" />
           <entry key="XML" value="36" />
           <entry key="YAML" value="81" />
         </counts>
@@ -172,8 +173,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="276">
+              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,7 +182,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dtos/UserDTO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -199,6 +200,18 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="221">
+                <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -208,6 +221,15 @@
                 <element signature="e#4097#4098#0" expanded="true" />
                 <element signature="e#4162#4163#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mySql_DML_DDL.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="39" column="59" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -275,7 +297,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/TrackController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/RouteService.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/PlaylistController.java" />
@@ -317,7 +338,6 @@
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/PlaylistDAOTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/import.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/ddl_dml_script.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/mySql_DML_DDL.sql" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/UserDAOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/TrackDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/controllers/TrackController.java" />
@@ -326,6 +346,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/DAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mySql_DML_DDL.sql" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -515,17 +537,6 @@
             <path>
               <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
               <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -540,50 +551,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-              <item name="datasources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-              <item name="dtos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
@@ -591,58 +558,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-              <item name="datasources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dea-spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cumali" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dea-spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -654,7 +569,7 @@
     <property name="SearchEverywhereHistoryKey" value="data&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/resources/database.properties&#10;trac&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/test/java/nl/han/ica/dea/cumali/datasources/TrackDAOTest.java&#10;Userda&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/UserDAO.java&#10;userDt&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/dtos/UserDTO.java&#10;userS&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/services/UserService.java&#10;dao&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java&#10;playl&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/test/java/nl/han/ica/dea/cumali/controllers/PlaylistControllerTest.java&#10;pla&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java&#10;user&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/services/UserService.java&#10;Login&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/test/java/nl/han/ica/dea/cumali/controllers/LoginControllerTest.java&#10;login&#9;PSI&#9;JAVA://nl.han.ica.dea.cumali.controllers.LoginControllerTest&#10;lo&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java&#10;contro&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java&#10;plA&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/PlaylistDAO.java&#10;loginC&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/controllers/LoginController.java&#10;playlistC&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/controllers/PlaylistController.java&#10;imp&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/test/resources/import.sql&#10;databa&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/datasources/util/DatabaseProperties.java&#10;userd&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/dto/UserDTO.java&#10;userdto&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/java/nl/han/ica/dea/cumali/dto/UserDTO.java&#10;propert&#9;FILE&#9;file://C:/Users/cumal/Documents/dea-projects/dea-spotitube/src/main/resources/database.properties" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540247317512" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540249422215" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -896,7 +811,7 @@
       <workItem from="1539944796076" duration="7222000" />
       <workItem from="1540048670290" duration="473000" />
       <workItem from="1540205697882" duration="209000" />
-      <workItem from="1540206081459" duration="19149000" />
+      <workItem from="1540206081459" duration="21334000" />
     </task>
     <task id="LOCAL-00001" summary="unit tests for services">
       <created>1538409795948</created>
@@ -1052,7 +967,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540244954656</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="calculateTotalLength function implemented">
+      <created>1540247324067</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1540247324067</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1088,7 +1010,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209567000" />
+    <option name="totallyTimeSpent" value="211752000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1103,7 +1025,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990476" visible="true" weight="0.23288591" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990476" visible="true" weight="0.23288591" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1120,8 +1042,8 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49463087" weight="0.4539007" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5060403" side_tool="true" weight="0.33617023" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49395972" weight="0.33617023" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5060403" side_tool="true" visible="true" weight="0.37021276" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49395972" visible="true" weight="0.37021276" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32907802" />
@@ -1167,14 +1089,14 @@
     <MESSAGE value="dto package name changed to dtos" />
     <MESSAGE value="query paramaters&#10;handle owner" />
     <MESSAGE value="query paramater `forPlaylist` added" />
-    <option name="LAST_COMMIT_MESSAGE" value="query paramater `forPlaylist` added" />
+    <MESSAGE value="calculateTotalLength function implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="calculateTotalLength function implemented" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/util/DatabaseConnection.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/Collector.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/services/TrackService.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/services/TrackServiceTest.java" />
@@ -1491,13 +1413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mySql_DML_DDL.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
-          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/dea/cumali/datasources/UserDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1595,6 +1510,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/TrackDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dtos/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1613,27 +1552,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/TrackDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/datasources/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/dea/cumali/dtos/UserDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mySql_DML_DDL.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <caret line="39" column="59" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="221">
+            <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

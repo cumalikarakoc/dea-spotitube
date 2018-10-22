@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `playlist_track` (
   FOREIGN KEY (`track_id`) REFERENCES `tracks`(`id`) ON UPDATE CASCADE  ON DELETE CASCADE
 );
 
-INSERT INTO `users` (`username`, `password`) VALUES ('cumali', 'admin123');
+INSERT INTO `users` (`username`, `password`) VALUES ('admin', 'admin123');
 INSERT INTO `users` (`username`, `password`) VALUES ('testUser', 'test123');
 
 INSERT INTO `tracks` (`title`, `performer`, `duration`, `album`, `playcount`, `publicationDate`, `description`, `offlineAvailable` )
