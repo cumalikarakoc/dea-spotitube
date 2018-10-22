@@ -1,4 +1,4 @@
-# Spotitube [![Build Status](https://travis-ci.com/cumalikarakoc/dea-spotitube.svg?branch=master)](https://github.com/cumalikarakoc/dea-spotitube) [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=com.lapots.breed.judge:judge-rule-engine&metric=alert_status)](https://sonarcloud.io/dashboard?id=nl.han.ica.dea.nl%3Adea-spotitube)
+# Spotitube [![Build Status](https://travis-ci.com/cumalikarakoc/dea-spotitube.svg?branch=master)](https://travis-ci.com/cumalikarakoc/dea-spotitube/branches) [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=com.lapots.breed.judge:judge-rule-engine&metric=alert_status)](https://sonarcloud.io/dashboard?id=nl.han.ica.dea.nl%3Adea-spotitube)
 
 This repository contains a back-end RESTFull API for the final programming assignment of the course OOSE-DEA at the HAN University of Applied Sciences.
 
