@@ -19,14 +19,14 @@ class UserServiceTest {
 
     @Test
     void testShouldReturnTrueGivenCorrectUserCredentials() {
-        Mockito.when(userDAO.getUserDTO(Mockito.anyString())).thenReturn(new UserDTO("test", "test123"));
+        Mockito.when(userDAO.getUserDTOByUsername(Mockito.anyString())).thenReturn(new UserDTO(1,"test", "test123"));
         boolean returnValue = userService.authenticate("test", "test123");
         Assertions.assertTrue(returnValue);
     }
 
     @Test
     void testShouldReturnFalseGivenIncorrectUserCredentials() {
-        Mockito.when(userDAO.getUserDTO(Mockito.anyString())).thenReturn(new UserDTO("test", "test123"));
+        Mockito.when(userDAO.getUserDTOByUsername(Mockito.anyString())).thenReturn(new UserDTO(1, "test", "test123"));
         boolean returnValue = userService.authenticate("test", "123");
         Assertions.assertFalse(returnValue);
     }

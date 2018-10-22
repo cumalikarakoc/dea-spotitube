@@ -32,8 +32,8 @@ public class PlaylistControllerTest {
 
     @Test
     void testShouldReturn200IfAllPlaylistsRequested(){
-        Mockito.when(playlistDAO.all()).thenReturn(playlistCollectionDTO);
-        Response response = playlistController.index();
+        Mockito.when(playlistDAO.all(Mockito.anyString())).thenReturn(playlistCollectionDTO);
+        Response response = playlistController.index(Mockito.anyString());
 
         Assertions.assertEquals(200, response.getStatus());
     }
@@ -88,9 +88,11 @@ public class PlaylistControllerTest {
     @Test
     void testShouldReturn200IfPlaylistIsUpdated(){
         int playlistId = Mockito.anyInt();
+        String token =  Mockito.anyString();
         PlaylistDTO playlistDTO = Mockito.anyObject();
-        Mockito.when(playlistDAO.update(playlistId, playlistDTO)).thenReturn(playlistCollectionDTO);
-        Response response = playlistController.update(playlistId, playlistDTO);
+
+        Mockito.when(playlistDAO.update(playlistId, playlistDTO, token)).thenReturn(playlistCollectionDTO);
+        Response response = playlistController.update(playlistId, playlistDTO, token);
 
         Assertions.assertEquals(200, response.getStatus());
     }
@@ -98,8 +100,10 @@ public class PlaylistControllerTest {
     @Test
     void testShouldReturn200IfNewPlaylistIsCreated(){
         PlaylistDTO playlistDTO = Mockito.anyObject();
-        Mockito.when(playlistDAO.save(playlistDTO)).thenReturn(playlistCollectionDTO);
-        Response response = playlistController.store(playlistDTO);
+        String token =  Mockito.anyString();
+
+        Mockito.when(playlistDAO.save(playlistDTO, token)).thenReturn(playlistCollectionDTO);
+        Response response = playlistController.store(playlistDTO, "token");
 
         Assertions.assertEquals(200, response.getStatus());
     }
@@ -107,8 +111,10 @@ public class PlaylistControllerTest {
     @Test
     void testShouldReturn200IfNewPlaylistIsDeleted(){
         int id = Mockito.anyInt();
-        Mockito.when(playlistDAO.delete(id)).thenReturn(playlistCollectionDTO);
-        Response response = playlistController.destroy(id);
+        String token =  Mockito.anyString();
+
+        Mockito.when(playlistDAO.delete(id, token)).thenReturn(playlistCollectionDTO);
+        Response response = playlistController.destroy(id, token);
 
         Assertions.assertEquals(200, response.getStatus());
     }

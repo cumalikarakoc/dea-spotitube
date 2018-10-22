@@ -16,7 +16,7 @@ public class PlaylistDAOTest extends DAOTest{
     }
     @Test
     void testShouldReturnThreePlaylists() {
-        int numberOfPlaylists = playlistDAO.all().getPlaylists().size();
+        int numberOfPlaylists = playlistDAO.all("token").getPlaylists().size();
 
         Assertions.assertEquals(3, numberOfPlaylists);
     }
@@ -32,7 +32,7 @@ public class PlaylistDAOTest extends DAOTest{
     void testShouldReturnEditedNameIfPlaylistNameEdited() {
         PlaylistDTO playlistDTO = playlistDAO.find(1);
         playlistDTO.setName("edited");
-        playlistDAO.update(1, playlistDTO);
+        playlistDAO.update(1, playlistDTO, "token");
         String playlistName = playlistDAO.find(1).getName();
 
         Assertions.assertEquals("edited",playlistName);
@@ -40,20 +40,20 @@ public class PlaylistDAOTest extends DAOTest{
 
     @Test
     void testShouldReturnOneMorePlaylistIfPlaylistCreated() {
-        int numberOfPlaylistsBeforeInserting = playlistDAO.all().getPlaylists().size();
+        int numberOfPlaylistsBeforeInserting = playlistDAO.all("token").getPlaylists().size();
         PlaylistDTO playlistDTO = new PlaylistDTO();
         playlistDTO.setName("new playlist");
-        playlistDAO.save(playlistDTO);
-        int numberOfPlaylistsAfterInserting = playlistDAO.all().getPlaylists().size();
+        playlistDAO.save(playlistDTO, "token");
+        int numberOfPlaylistsAfterInserting = playlistDAO.all("token").getPlaylists().size();
 
         Assertions.assertEquals(numberOfPlaylistsBeforeInserting+1, numberOfPlaylistsAfterInserting);
     }
 
     @Test
     void testShouldReturnOneLessPlaylistIfPlaylistDeleted() {
-        int numberOfPlaylistsBeforeDeleting = playlistDAO.all().getPlaylists().size();
-        playlistDAO.delete(3);
-        int numberOfPlaylistsAfterDeleting = playlistDAO.all().getPlaylists().size();
+        int numberOfPlaylistsBeforeDeleting = playlistDAO.all("token").getPlaylists().size();
+        playlistDAO.delete(3, "token");
+        int numberOfPlaylistsAfterDeleting = playlistDAO.all("token").getPlaylists().size();
 
         Assertions.assertEquals(numberOfPlaylistsBeforeDeleting-1, numberOfPlaylistsAfterDeleting);
     }

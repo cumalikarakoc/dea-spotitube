@@ -6,22 +6,16 @@ DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id`       INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
   `username`     VARCHAR(255) NOT NULL,
-  `password`    VARCHAR (255) NOT NULL
-);
-
-DROP TABLE IF EXISTS `auth_tokens`;
-CREATE TABLE `auth_tokens` (
-  `id`       INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-  `token`     VARCHAR(255) NOT NULL,
-  `username`  VARCHAR(255) NOT NULL,
-  CONSTRAINT fk_username FOREIGN KEY (`username`) REFERENCES `users` (`username`)
+  `password`    VARCHAR (255) NOT NULL,
+  `token` VARCHAR (25) DEFAULT NULL,
 );
 
 DROP TABLE IF EXISTS `playlists`;
 CREATE TABLE `playlists` (
   `id`       INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
   `name`     VARCHAR(255) DEFAULT NULL,
-  `owner`    BIT DEFAULT FALSE
+  `owner_id`    INT NOT NULL,
+    CONSTRAINT fk_owner FOREIGN KEY (`owner_id`) REFERENCES `users`(`id`),
 );
 
 DROP TABLE IF EXISTS `tracks`;
@@ -45,14 +39,12 @@ CREATE TABLE `playlist_track` (
   CONSTRAINT fk_track_id FOREIGN KEY (`track_id`) REFERENCES `tracks`(`id`),
 );
 
-INSERT INTO `users` (`username`, `password`) VALUES ('test', 'test123');
+INSERT INTO `users` (`username`, `password`, `token`) VALUES ('test', 'test123', 'token');
 INSERT INTO `users` (`username`, `password`) VALUES ('testUser', 'test123');
 
-INSERT INTO `auth_tokens` (`token`, `username`) VALUES ('randomToken', 'test');
-
-INSERT INTO `playlists` (`name`, `owner`) VALUES ('Test playlist', TRUE);
-INSERT INTO `playlists` (`name`, `owner`) VALUES ('Second test playlist', FALSE);
-INSERT INTO `playlists` (`name`, `owner`) VALUES ('Third test playlist', FALSE);
+INSERT INTO `playlists` (`name`, `owner_id`) VALUES ('Test playlist', 1);
+INSERT INTO `playlists` (`name`, `owner_id`) VALUES ('Second test playlist', 1);
+INSERT INTO `playlists` (`name`, `owner_id`) VALUES ('Third test playlist', 1);
 
 INSERT INTO `tracks` (`title`, `performer`, `duration`, `album`, `playcount`, `publicationDate`, `description`, `offlineAvailable` ) VALUES ('My Day', 'Someone', 321, 'dont know', 0, null, 'desc',  FALSE);
 INSERT INTO `tracks` (`title`, `performer`, `duration`, `album`, `playcount`, `publicationDate`, `description`, `offlineAvailable` ) VALUES ('My Night', 'Noone', 321, 'i know', 0, null, 'desc',  TRUE);

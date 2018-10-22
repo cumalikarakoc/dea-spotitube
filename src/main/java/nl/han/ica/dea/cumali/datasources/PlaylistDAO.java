@@ -14,10 +14,25 @@ public class PlaylistDAO extends DAO<PlaylistDTO> {
 
     private static final int LENGTH = 11111;
 
-    public PlaylistCollectionDTO all() {
+    public PlaylistCollectionDTO all(String token) {
         Object[] values = new Object[0];
         List<PlaylistDTO> playlists = runQueryToFetchDTOList("SELECT * FROM playlists", values);
+        handleOwner(playlists, token);
         return new PlaylistCollectionDTO(playlists, LENGTH);
+    }
+
+    private void handleOwner(List<PlaylistDTO> playlists, String token) {
+        Object[] values = {token};
+        List<PlaylistDTO> ownedPlaylists = runQueryToFetchDTOList("SELECT * FROM playlists WHERE owner_id IN " +
+                "(SELECT id FROM users WHERE token LIKE ?)", values);
+
+       for (PlaylistDTO playlist : playlists) {
+            for (PlaylistDTO ownedPlaylist: ownedPlaylists) {
+                if (ownedPlaylist.getId() == playlist.getId()) {
+                    playlist.setOwner(true);
+                }
+            }
+        }
     }
 
     public PlaylistDTO find(int id) {
@@ -26,22 +41,23 @@ public class PlaylistDAO extends DAO<PlaylistDTO> {
         return playlists.isEmpty() ? null : playlists.get(0);
     }
 
-    public PlaylistCollectionDTO update(int id, PlaylistDTO playlistDTO) {
-        Object[] values = {playlistDTO.getName(), playlistDTO.getOwner(), id};
-        runQuery("UPDATE playlists SET name = ?, owner = ? WHERE id = ?", values);
-        return all();
+    public PlaylistCollectionDTO update(int id, PlaylistDTO playlistDTO, String token) {
+        Object[] values = {playlistDTO.getName(), id};
+        runQuery("UPDATE playlists SET name = ? WHERE id = ?", values);
+        return all(token);
     }
 
-    public PlaylistCollectionDTO save(PlaylistDTO playlistDTO) {
-        Object[] values = {playlistDTO.getName(), true};
-        runQuery("INSERT INTO playlists(name, owner) VALUES(?, ?)", values);
-        return all();
+    public PlaylistCollectionDTO save(PlaylistDTO playlistDTO, String token) {
+        UserDAO userDAO = new UserDAO();
+        Object[] values = {playlistDTO.getName(), userDAO.getUserDTOByToken(token).getId()};
+        runQuery("INSERT INTO playlists(name, owner_id) VALUES(?, ?)", values);
+        return all(token);
     }
 
-    public PlaylistCollectionDTO delete(int id) {
+    public PlaylistCollectionDTO delete(int id, String token) {
         Object[] values = {id};
         runQuery("DELETE FROM playlists where id = ?", values);
-        return all();
+        return all(token);
     }
 
     public TrackCollectionDTO removeTrackFromPlaylist(int playlistId, int trackId) {
@@ -62,7 +78,7 @@ public class PlaylistDAO extends DAO<PlaylistDTO> {
 
         playlistDTO.setId(resultSet.getInt("id"));
         playlistDTO.setName(resultSet.getString("name"));
-        playlistDTO.setOwner(resultSet.getBoolean("owner"));
+        playlistDTO.setOwner(false);
         playlistDTO.setTracks(tracksBelongToPlaylist(playlistDTO.getId()));
 
         return playlistDTO;

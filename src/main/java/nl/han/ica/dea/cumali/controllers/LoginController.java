@@ -22,7 +22,8 @@ public class LoginController {
         if (userService.authenticate(request.getUser(), request.getPassword())) {
             LoginResponseDTO response = new LoginResponseDTO();
 
-            response.setToken(RandomStringUtils.randomAscii(100));
+            //generate a unique token
+            response.setToken(RandomStringUtils.randomAlphanumeric(20) + userService.getUserByUsername(request.getUser()).getId());
             response.setUser(request.getUser());
 
             userService.persistToken(response.getUser(), response.getToken());

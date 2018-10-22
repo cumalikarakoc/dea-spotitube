@@ -17,8 +17,8 @@ public class PlaylistController {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response index() {
-        return Response.ok(playlistDAO.all()).build();
+    public Response index(@QueryParam("token") String token) {
+        return Response.ok(playlistDAO.all(token)).build();
     }
 
     @GET
@@ -35,23 +35,23 @@ public class PlaylistController {
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response update(@PathParam("id") int id, PlaylistDTO playlistDTO){
-        return Response.ok( playlistDAO.update(id, playlistDTO)).build();
+    public Response update(@PathParam("id") int id, PlaylistDTO playlistDTO, @QueryParam("token") String token){
+        return Response.ok( playlistDAO.update(id, playlistDTO, token)).build();
     }
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response store(PlaylistDTO playlistDTO){
-        return Response.ok(playlistDAO.save(playlistDTO)).build();
+    public Response store(PlaylistDTO playlistDTO, @QueryParam("token") String token){
+        return Response.ok(playlistDAO.save(playlistDTO, token)).build();
     }
 
     @DELETE
     @Path("{id}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response destroy(@PathParam("id") int id){
-        return Response.ok(playlistDAO.delete(id)).build();
+    public Response destroy(@PathParam("id") int id, @QueryParam("token") String token){
+        return Response.ok(playlistDAO.delete(id, token)).build();
     }
 
     @GET

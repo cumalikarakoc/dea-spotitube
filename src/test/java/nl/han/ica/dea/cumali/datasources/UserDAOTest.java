@@ -19,14 +19,14 @@ public class UserDAOTest extends DAOTest {
 
     @Test
     void testShouldReturnUsernameOfRequestedUser(){
-         String username = userDAO.getUserDTO("test").getUser();
+         String username = userDAO.getUserDTOByUsername("test").getUser();
 
         Assertions.assertEquals("test", username);
     }
 
     @Test
     void testShouldUpdateTokenOfUser() throws SQLException {
-        UserDTO user = userDAO.getUserDTO("test");
+        UserDTO user = userDAO.getUserDTOByUsername("test");
         String oldToken = getTokenOfUser(user);
 
         userDAO.setAuthToken(user.getUser(), "newRandomToken");
@@ -36,8 +36,8 @@ public class UserDAOTest extends DAOTest {
     }
 
     @Test
-    void testShouldInsertTokenFor() throws SQLException {
-        UserDTO user = userDAO.getUserDTO("testUser");
+    void testShouldInsertTokenForUser() throws SQLException {
+        UserDTO user = userDAO.getUserDTOByUsername("testUser");
 
         userDAO.setAuthToken(user.getUser(), "newRandomToken");
         String newToken  = getTokenOfUser(user);
@@ -45,9 +45,9 @@ public class UserDAOTest extends DAOTest {
         Assertions.assertEquals("newRandomToken", newToken);
     }
 
-    private String getTokenOfUser(UserDTO user) throws SQLException {
+    String getTokenOfUser(UserDTO user) throws SQLException {
         Statement stmt = connection.createStatement();
-        stmt.execute("SELECT token FROM auth_tokens WHERE username LIKE '" + user.getUser() + "'");
+        stmt.execute("SELECT token FROM users WHERE username LIKE '" + user.getUser() + "'");
         ResultSet rs = stmt.getResultSet();
         rs.next();
         return rs.getString("token");

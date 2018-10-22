@@ -15,6 +15,7 @@ public class LoginControllerTest
     private LoginController loginController;
     private UserService userService;
     private UserDTO userDTO;
+
     @BeforeEach
      void setup(){
         loginController = new LoginController();
@@ -28,9 +29,10 @@ public class LoginControllerTest
 
     @Test
     void testShouldReturn200IfUserAuthenticates(){
+        Mockito.when(userService.getUserByUsername(Mockito.anyString())).thenReturn(userDTO);
         Mockito.when(userService.authenticate(userDTO.getUser(), userDTO.getPassword())).thenReturn(true);
-
         Response response = loginController.login(userDTO);
+
         Assertions.assertEquals(200, response.getStatus());
     }
 
@@ -39,6 +41,7 @@ public class LoginControllerTest
         Mockito.when(userService.authenticate(userDTO.getUser(), userDTO.getPassword())).thenReturn(false);
 
         Response response = loginController.login(userDTO);
+
         Assertions.assertEquals(401, response.getStatus());
     }
 }

@@ -5,20 +5,16 @@
 CREATE TABLE IF NOT EXISTS `users` (
   `id`       INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `username`     VARCHAR(255) NOT NULL UNIQUE,
-  `password`    VARCHAR (255) NOT NULL
+  `password`    VARCHAR (255) NOT NULL,
+  `token`     VARCHAR (255) NULL
 );
 
-CREATE TABLE IF NOT EXISTS `auth_tokens` (
-  `id`       INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  `token`     VARCHAR(255) NOT NULL,
-  `username`  VARCHAR(255) NOT NULL,
-  FOREIGN KEY (`username`) REFERENCES `users` (`username`)
-);
 
 CREATE TABLE IF NOT EXISTS `playlists` (
   `id`       INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `name`     VARCHAR(255) NOT NULL UNIQUE,
-  `owner`    BIT DEFAULT FALSE
+  `owner_id`    INT NOT NULL,
+  FOREIGN KEY (`owner_id`) REFERENCES `users`(`id`) ON UPDATE CASCADE  ON DELETE CASCADE
 );
 
 CREATE TABLE IF NOT EXISTS `tracks` (
